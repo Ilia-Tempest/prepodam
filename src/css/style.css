@@ -6955,6 +6955,9 @@ footer .footer_wrapper .footer-information .footer-information_text {
   opacity: .8;
   margin-bottom: 15px;
 }
+.sideBar-mobile {
+  display: none;
+}
 
 footer .copyright {
   border-top: 1px solid #5b5b5b;
@@ -8627,6 +8630,9 @@ h6 {
   body {
     font-size: 16px;
   }
+  footer .footer_wrapper {
+    flex-wrap: wrap;
+}
   .wrapper {
     padding: 0 20px;
   }
@@ -8840,6 +8846,7 @@ h6 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
+           
   }
   footer .footer_wrapper .footer-soc {
     margin-bottom: 40px;
@@ -8860,11 +8867,24 @@ h6 {
             justify-content: center;
     -ms-flex-align: center;
     -webkit-box-align: center;
-            align-items: center;
+            align-items: center;       
   }
+ footer .footer-navigation {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+footer .footer_wrapper .footer-navigation .footer-site-nav {
+  margin-right: 0px;
+}
   footer .footer_wrapper .footer-navigation ul li:nth-child(5) {
     border-bottom: 1px solid #5b5b5b;
     padding-bottom: 10px;
+    border-width: 100%;
   }
   footer .footer_wrapper .footer-navigation ul li a {
     padding: 5px 0;
@@ -8873,6 +8893,12 @@ h6 {
     text-align: center;
     padding: 40px 0 0;
   }
+ footer .footer_sub-logo {
+  margin-right: 90px;
+ }
+ footer .copyright .copyright_text {
+  margin-bottom: 40px;
+}
   body {
     font-size: 14px;
   }
@@ -8940,7 +8966,102 @@ h6 {
   .slider-section_wrapper .slider-list .slider-item .slider-item__information .slider-item__information_conteiner .slider_btn {
     width: 290px;
   }
+  .courses .courses_wrapper .courses-nav .courses-list {
+    margin: 70px 0;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
 }
+.courses .courses_wrapper .coorses-conteiner, .courses .courses_wrapper .coorses-conteiner_rev {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Стили для блока статьи*/
+.articles .articles_wrapper .articles-navigation .articles-list {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 70px 0;
+  /* align-items: center; */
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+.articles .articles_wrapper .articles-conteiner .articles-item:nth-child(2n) .articles-info, .articles .articles_wrapper .articles-conteiner .articles-item:nth-child(2n) .hidden-information {
+  -ms-flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.articles .articles_wrapper .articles-conteiner .articles-item .articles-info, .articles .articles_wrapper .articles-conteiner_rev .articles-item .articles-info {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.info__link_btn {
+  background: linear-gradient(283.98deg, #ff571d, #fe6c39 94.46%);
+  color: #fff;
+  text-align: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-top: 60px;
+  padding: 7px 35px;
+  margin-bottom: 40px;
+}
+
+.articles-slider_wrapper, .articles-slider_wrapper .articles-page__slider {
+  display: none;
+}
+/*Стили для блока вопрос ответ*/
+.sideBar {
+  display: none;
+}
+.sideBar-mobile {
+  display: block;
+}
+.form_content .form_input {
+  border-radius: 10px;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 40px;
+  color: #898989;
+  max-width: 100%;
+  text-align: left;
+  background: none;
+  width: 328px;
+}
+.form_content .form_input_submit {
+  background: linear-gradient(165.1deg, #41f7fc 18.22%, #0f86f3 83.59%);
+  color: #fff;
+  width: 240px;
+  margin-bottom: 50px;
+}
+}
+
+
 
 @-webkit-keyframes a {
   0% {
