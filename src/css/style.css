@@ -7453,11 +7453,11 @@ h6 {
 
 .section-conteiner .information-block .ilustration .il_bcc {
   top: 4%;
-  right: 25%;
+  right: 22%;
 }
 
 .section-conteiner .information-block .ilustration .il_bcr {
-  top: 0;
+  top: -2%;
   right: 0;
 }
 
@@ -7949,12 +7949,13 @@ h6 {
 }
 
 .articles .articles_wrapper .articles-navigation .articles-list .articles__nav .articles__nav_btn {
-  background: linear-gradient(165.1deg, #41f7fc 18.22%, #0f86f3 83.59%);
+  background: linear-gradient(172.88deg, #41F1FC -25.02%, #0F86F3 122.68%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 500;
   letter-spacing: .05em;
   position: relative;
+  margin-right: 20px;
 }
 
 .articles .articles_wrapper .articles-navigation .articles-list .articles__nav .articles__nav_btn:hover:before {
@@ -8854,6 +8855,7 @@ h6 {
   footer .footer_wrapper .footer-navigation {
     border-bottom: 1px solid #5b5b5b;
   }
+  
   footer .footer_wrapper .footer-navigation ul {
     max-width: 100%;
   }
@@ -8884,7 +8886,6 @@ footer .footer_wrapper .footer-navigation .footer-site-nav {
   footer .footer_wrapper .footer-navigation ul li:nth-child(5) {
     border-bottom: 1px solid #5b5b5b;
     padding-bottom: 10px;
-    border-width: 100%;
   }
   footer .footer_wrapper .footer-navigation ul li a {
     padding: 5px 0;
