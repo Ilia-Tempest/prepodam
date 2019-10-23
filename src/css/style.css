@@ -7321,8 +7321,8 @@ h6 {
 }
 
 .slider-section_wrapper .slider-list .slider-item .slider-item__video .video_conteiner .slider_video_content {
-  width: 455px;
-  height: 303px;
+  width: 530px;
+  height: 354px;
   -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -7337,7 +7337,7 @@ h6 {
 }
 
 .slider-section_wrapper .slider-list .slider-item .slider-item__information .slider-item__information_conteiner {
-  margin-left: 50px;
+  margin-left: 150px;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -7955,7 +7955,7 @@ h6 {
   font-weight: 500;
   letter-spacing: .05em;
   position: relative;
-  margin-right: 20px;
+
 }
 
 .articles .articles_wrapper .articles-navigation .articles-list .articles__nav .articles__nav_btn:hover:before {
@@ -8698,7 +8698,7 @@ h6 {
     overflow: hidden;
   }
   .section-conteiner .information-block .ilustration .il_bl {
-    top: 40%;
+    top: 27%;
   }
   .section-conteiner .information-block .ilustration .il_bc {
     top: 0;
@@ -8847,6 +8847,10 @@ h6 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
+            padding:0;
+            padding-top: 30px;
+            position: relative;
+    
            
   }
   footer .footer_wrapper .footer-soc {
@@ -8882,6 +8886,7 @@ h6 {
 }
 footer .footer_wrapper .footer-navigation .footer-site-nav {
   margin-right: 0px;
+  width:100%;
 }
   footer .footer_wrapper .footer-navigation ul li:nth-child(5) {
     border-bottom: 1px solid #5b5b5b;
@@ -8894,8 +8899,20 @@ footer .footer_wrapper .footer-navigation .footer-site-nav {
     text-align: center;
     padding: 40px 0 0;
   }
+  footer .footer_wrapper .footer-navigation .footer-nav li .footer-nav__item {
+    height: 25px;
+    color: #c5c5c5;
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    -webkit-transition: .2s;
+    transition: .2s;
+    margin-bottom: 3px;
+}
  footer .footer_sub-logo {
-  margin-right: 90px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
  }
  footer .copyright .copyright_text {
   margin-bottom: 40px;
