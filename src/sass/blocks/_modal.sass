@@ -1,0 +1,108 @@
+.form
+  &_input
+   width: 424px;
+   height: 40px;
+  &__answer
+    color: #333333
+    font-size: 18px
+    margin-bottom: 35px
+  &_content
+    display: block
+    margin: auto;
+    padding-top: 20px
+    width: 424px;
+    height: 731px;
+  &__checkbox
+    display: flex
+    align-items: flex-start
+    flex-direction: column
+    justify-content: flex-start
+  &__item
+    display: flex
+    justify-content: space-around
+    align-items: center
+    margin-bottom: 20px
+  &__in
+    margin-left: 5px
+  &__btn
+    background: linear-gradient(175.93deg, #41F1FC -25.02%, #0F86F3 122.68%)
+    border-radius: 100px
+    color: #ffffff
+    width: 424px;
+    height: 39px;
+
+.overlay 
+  position: fixed;
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.6); /* затемнение фона */
+  display: none;
+  &__title
+  text-align: center
+  &__input
+    margin-top: 50px
+    width: 362px
+    height: 60px
+    border: 1px solid black;
+  &__button
+     display: block
+     margin: auto
+     margin-top: 20px
+     background-color: #f93d3d
+     color: #ffffff
+     font-size: 18px
+     padding: 22px 20px 22px 20px
+     &-img
+      margin-right: 10px
+      display: inline-block
+
+.overlay.active 
+  display: block;
+
+.overlay .flex-popap 
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+.overlay .flex-popap .popap 
+  position: relative;
+  background-color: #fff;  /* цвет фона всплывающего блока */
+  padding: 35px 25px;
+  margin: 0 10px;
+  width: 548px;
+  height: 862px;
+  border-radius: 10px;
+  overflow: auto;
+
+.popap span 
+  position: absolute
+  top: 0
+  right: 0
+  padding-top: 20px
+  padding-right: 20px
+  cursor: pointer
+.mod
+  &__conf
+    margin-top: 10px
+    font-size: 14px
+  &__label
+    margin-right: 10px
+    vertical-align: middle
+
+@media (max-width: 768px)
+ .mod
+    &__conf
+      font-size: 10px
+ .overlay 
+   &__title
+     font-size: 20px
+   &__input
+    margin-top: 40px
+    width: 100%
+ .overlay .flex-popap .popap 
+    height: 905px
+    
