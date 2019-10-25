@@ -262,11 +262,11 @@
               <span class="close_popap">
                 <img src="img/close.png" alt="">
               </span>
-              <form class="form_content form_QAA" >
-                <input placeholder=" Фамилия" class="form_input" type="text">
-                <input placeholder=" Имя" class="form_input" type="text">
-                <input placeholder=" Уровень образования" class="form_input" type="text">
-                <h3 class="form__answer">С какой целью хотите пройте курс?</h3>
+              <form class="form_content form_QAA" action="" method="">
+                <input placeholder=" Фамилия" class="form_input" type="text" required>
+                <input placeholder=" Имя" class="form_input" type="text" required>
+                <input placeholder=" Уровень образования" class="form_input" type="text" required>
+                <h3 class="form__answer">С какой целью хотите пройти курс?</h3>
                 <div class="form__checkbox">
                 <div class="form__item"><input name="about" id="i" type="checkbox"><label class="form__in" for="i">Для себя</label></div>
                 <div class="form__item">
@@ -277,10 +277,10 @@
               </div>
               </div>
               <h3 class="form__answer">Сколько бы вы заплатили за курс?</h3>
-              <input placeholder=" Сумма в руб" class="form_input" type="text">
-              <input placeholder=" Телефон" class="form_input" type="tel">
-              <input placeholder=" Эл. почта" class="form_input" type="email">
-              <input class="form__btn" type="submit" value="Отправить">
+              <input placeholder=" Сумма в руб" class="form_input" type="number" required>
+              <input placeholder=" Телефон" class="form_input" type="tel" required>
+              <input placeholder=" Эл. почта" class="form_input" type="email" required>
+              <input class="form__btn" type="submit" value="Отправить" required>
 
               </form>
                
