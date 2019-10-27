@@ -95,7 +95,11 @@
           <div class="section_btn"><span class="allBtn sectionBtn">199 преподавателей уже работают на сайте</span></div>
           <div class="information-block">
             <h2 class="section-conteiner__title program-title__text">Выберите свою программу</h2>
-            <div class="program-links__list"><a class="allBtn program-link shcoll-link" href=""> Школьная программа</a><a class="allBtn program-link student-link" href="">Студенческая программа</a><a class="allBtn program-link additional-link" href="">Дополнительное образование</a></div>
+            <div class="program-links__list">
+              <a class="allBtn program-link shcoll-link" href="school-program.html"> Школьная программа</a>
+              <a class="allBtn program-link student-link" href="student-program.html">Студенческая программа</a>
+              <a class="allBtn program-link additional-link" href="">Дополнительное образование</a>
+            </div>
           </div>
           <div class="information-block">
             <h2 class="section-conteiner__title">Как это работает</h2>
@@ -242,9 +246,37 @@
           <div class="information-block soc">
             <h2 class="section-conteiner__title">Мы в социальных сетях</h2>
             <div class="soc-wrapper">
-              <div class="soc-item"><img src="img/od.png" alt=""></div>
-              <div class="soc-item"><img src="img/od.png" alt=""></div>
-              <div class="soc-item"><img src="img/od.png" alt=""></div>
+              <div class="soc-item">
+                  <div id="ok_group_widget"></div>
+                  <script>
+                  !function (d, id, did, st) {
+                    var js = d.createElement("script");
+                    js.src = "https://connect.ok.ru/connect.js";
+                    js.onload = js.onreadystatechange = function () {
+                    if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
+                      if (!this.executed) {
+                        this.executed = true;
+                        setTimeout(function () {
+                          OK.CONNECT.insertGroupWidget(id,did,st);
+                        }, 0);
+                      }
+                    }};
+                    d.documentElement.appendChild(js);
+                  }(document,"ok_group_widget","54506450780359",'{"width":285,"height":400}');
+                  </script>
+              </div>
+              <div class="soc-item facebook-index">
+                  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprep0dam%2F&tabs=timeline&width=285&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="285" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+              </div>
+              <div class="soc-item">
+                  <script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
+
+                  <!-- VK Widget -->
+                  <div id="vk_groups"></div>
+                  <script type="text/javascript">
+                  VK.Widgets.Group("vk_groups", {mode: 4, width: "285", height: "400"}, 106560952);
+                  </script>
+              </div>
             </div>
           </div>
           <div class="section_btn"><span class="allBtn sectionBtn">199 преподавателей уже работают на сайте</span></div>

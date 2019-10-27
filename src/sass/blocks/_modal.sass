@@ -30,6 +30,7 @@
     color: #ffffff
     width: 424px;
     height: 39px;
+    margin-bottom: 10px;
 
 .overlay 
   position: fixed;
@@ -91,9 +92,15 @@
     font-size: 14px
   &__label
     margin-right: 10px
-    vertical-align: middle
-
+    vertical-align: middle  
+@media (max-height: 800px)
+ .overlay .flex-popap .popap 
+    height: 100%
+    width: 70%
 @media (max-width: 768px)
+ .facebook-index
+  margin-top: 40px
+  margin-bottom: 40px
  .mod
     &__conf
       font-size: 10px
@@ -113,5 +120,8 @@
      width: 328px
    &__btn
      width: 300px
+.facebook
+  margin-top: 40px
+  margin-bottom: 40px
 
     
