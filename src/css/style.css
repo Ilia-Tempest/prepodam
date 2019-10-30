@@ -6874,10 +6874,6 @@ select {
   padding-right: 1em;
 }
 
-select:not([multiple]):not([size]) {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='4'%3E%3Cpath d='M4 0h6L7 4'/%3E%3C/svg%3E");
-}
-
 ::-ms-expand {
   display: none;
 }
@@ -9602,7 +9598,7 @@ h6 {
 .main__title {
   font-family: Montserrat;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 20px;
   line-height: 27px;
   letter-spacing: 0.05em;
@@ -9618,7 +9614,7 @@ h6 {
   display: inline-block;
   font-family: Montserrat;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.05em;
@@ -9683,7 +9679,7 @@ h6 {
 .main__text-right {
   font-family: Montserrat;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.05em;
@@ -9698,7 +9694,8 @@ h6 {
   margin-top: 50px;
   background: linear-gradient(174.2deg, #41F1FC -25.02%, #0F86F3 122.68%);
   border-radius: 100px;
-  padding: 13px 100px;
+  width: 297px;
+  height: 44px;
   letter-spacing: 0.05em;
   font-variant: small-caps;
   color: #FFFFFF;
@@ -9720,10 +9717,47 @@ h6 {
   color: #FF4200;
 }
 
-/*Стили для блока school-program*/
+/*Стили для блока student-program*/
+.dop_select {
+  width: 378px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px #004EC2 solid;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.06em;
+  font-variant: small-caps;
+  color: #004EC2;
+}
+
+.dop-text__main {
+  color: #004EC2;
+}
+
+.dop_title {
+  position: absolute;
+  width: 536px;
+  height: 79px;
+  left: 875px;
+  top: 215px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0.05em;
+  font-variant: small-caps;
+  color: #004EC2;
+}
+
+/*Стили для блока dop-scule*/
 .form_input {
   width: 424px;
   height: 40px;
+  background: url(../img/button.png);
 }
 
 .form__answer {
@@ -9867,7 +9901,7 @@ h6 {
 @media (max-height: 800px) {
   .overlay .flex-popap .popap {
     height: 100%;
-    width: 70%;
+    width: 548px;
   }
 }
 

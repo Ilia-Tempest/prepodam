@@ -265,7 +265,13 @@
               <form class="form_content form_QAA" action="" method="">
                 <input placeholder=" Фамилия" class="form_input" type="text" required>
                 <input placeholder=" Имя" class="form_input" type="text" required>
-                <input placeholder=" Уровень образования" class="form_input" type="text" required>
+                <select name="select" id="" class="form_input" required>
+                    <option value="" disabled selected>Уровень образования</option>
+                  <option value="">начальное</option>
+                  <option value="">среднее</option>
+                  <option value="">среднее специальное</option>
+                  <option value="">высшее</option>
+                </select>
                 <h3 class="form__answer">С какой целью хотите пройти курс?</h3>
                 <div class="form__checkbox">
                 <div class="form__item"><input name="about" id="i" type="checkbox"><label class="form__in" for="i">Для себя</label></div>
