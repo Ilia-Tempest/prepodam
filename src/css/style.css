@@ -9579,9 +9579,14 @@ h6 {
   line-height: 27px;
   letter-spacing: 0.05em;
   font-variant: small-caps;
-  display: block;
   margin-bottom: 25px;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main__text-top:last-child {
@@ -9593,6 +9598,15 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.main__block-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .main__title {
@@ -9705,6 +9719,62 @@ h6 {
   font-size: 18px;
 }
 
+.main__text-one {
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  .main__block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main__item-right {
+    margin-left: 0;
+    width: 328px;
+    margin: auto;
+  }
+  .main__text-right {
+    width: 328px;
+    height: 385px;
+  }
+  .main__item-left {
+    border: 0;
+    width: 328px;
+    padding-top: 0;
+    padding-right: 0;
+    margin: auto;
+  }
+  .main__form {
+    display: inline-block;
+  }
+  .main-auto {
+    margin-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-auto__text {
+    margin-top: 18px;
+    width: 190.55px;
+    text-align: center;
+  }
+  .main__button {
+    margin-left: 10px;
+  }
+  .main__subtitle {
+    width: 328px;
+    height: 112px;
+  }
+}
+
 /*Стили для блока school-program*/
 .main-text__student {
   font-family: Montserrat;
@@ -9738,11 +9808,10 @@ h6 {
 }
 
 .dop_title {
-  position: absolute;
+  display: inline-block;
+  margin-bottom: 70px;
   width: 536px;
   height: 79px;
-  left: 875px;
-  top: 215px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
@@ -9751,6 +9820,7 @@ h6 {
   letter-spacing: 0.05em;
   font-variant: small-caps;
   color: #004EC2;
+  margin-right: 20px;
 }
 
 /*Стили для блока dop-scule*/
