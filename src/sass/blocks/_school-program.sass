@@ -2,9 +2,38 @@
   background: linear-gradient(87.53deg, #0f1012 -70.47%, #393b3f 103.27%);
   padding-bottom: 20px
   padding-top: 20px
+.school_title
+    display: inline-block
+    width: 566px;
+    height: 79px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.05em;
+    font-variant: small-caps;
+    background: linear-gradient(173.5deg, #41F1FC -25.02%, #0F86F3 122.68%); 
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
 .main
   padding-top: 100px
   padding-bottom: 100px
+  &_select
+    width: 378px
+    height: 40px
+    border-radius: 10px
+    border: 1px #41F1FC solid
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.06em;
+    font-variant: small-caps;
+    background: linear-gradient(173.5deg, #41F1FC -25.02%, #0F86F3 122.68%); 
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
   &__text-top
    background: linear-gradient(177.45deg, #41F1FC -25.02%, #0F86F3 122.68%)
    -webkit-background-clip: text
@@ -28,6 +57,20 @@
       display: flex
       justify-content: space-between 
   &__title
+    margin-top: 35px
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 800
+    font-size: 20px
+    line-height: 27px
+    letter-spacing: 0.05em
+    font-variant: small-caps
+    background: #333333
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    &:first-child
+      margin-top: 0
+  &__title-class
     font-family: Montserrat
     font-style: normal
     font-weight: 800
@@ -87,6 +130,28 @@
   &__form
     margin-top: 35px
     margin-bottom: 35px
+    display: flex
+    flex-direction: column
+  &__input
+    display: flex
+    align-items: center
+    margin-top: 10px
+    &:first-child
+      margin-top: 0
+  &__label
+    margin-left: 10px
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    font-variant: small-caps;
+    color: #000000;
+  &__radio
+    width: 26px
+    height: 26px
+    border-radius: 7px
   &__text-right
     font-family: Montserrat;
     font-style: normal;
@@ -116,7 +181,12 @@
      margin-bottom: 25px
 
 @media (max-width: 768px)
+ .school_title
+   display: none
  .main
+    &_select
+      width: 327px
+      height: 40px
     &__block
       flex-wrap: wrap
       flex-direction: column
@@ -133,8 +203,8 @@
       padding-top: 0
       padding-right: 0
       margin: auto
+      text-align: center
     &__form
-      display: inline-block
     &-auto
       margin-top: 0
       display: flex
@@ -143,11 +213,15 @@
         margin-top: 18px
         width: 190.55px
         text-align: center
+      &__image
+        margin: auto
     &__button
       margin-left: 10px
     &__subtitle 
       width: 328px
       height: 112px
+ 
+
 
      
    

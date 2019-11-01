@@ -54,6 +54,11 @@ input[type="checkbox"]:checked + label:before {
   transform: rotate(45deg);
 }
 
+input[type="radio"] {
+  -moz-appearance: checkbox;
+  -webkit-appearance: checkbox;
+}
+
 /*Стили для шрифтов*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -9563,9 +9568,42 @@ h6 {
   padding-top: 20px;
 }
 
+.school_title {
+  display: inline-block;
+  width: 566px;
+  height: 79px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0.05em;
+  font-variant: small-caps;
+  background: linear-gradient(173.5deg, #41F1FC -25.02%, #0F86F3 122.68%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .main {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.main_select {
+  width: 378px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px #41F1FC solid;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.06em;
+  font-variant: small-caps;
+  background: linear-gradient(173.5deg, #41F1FC -25.02%, #0F86F3 122.68%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .main__text-top {
@@ -9610,6 +9648,24 @@ h6 {
 }
 
 .main__title {
+  margin-top: 35px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  font-variant: small-caps;
+  background: #333333;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main__title:first-child {
+  margin-top: 0;
+}
+
+.main__title-class {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 800;
@@ -9688,6 +9744,45 @@ h6 {
 .main__form {
   margin-top: 35px;
   margin-bottom: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.main__input:first-child {
+  margin-top: 0;
+}
+
+.main__label {
+  margin-left: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  font-variant: small-caps;
+  color: #000000;
+}
+
+.main__radio {
+  width: 26px;
+  height: 26px;
+  border-radius: 7px;
 }
 
 .main__text-right {
@@ -9724,6 +9819,13 @@ h6 {
 }
 
 @media (max-width: 768px) {
+  .school_title {
+    display: none;
+  }
+  .main_select {
+    width: 327px;
+    height: 40px;
+  }
   .main__block {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -9747,9 +9849,7 @@ h6 {
     padding-top: 0;
     padding-right: 0;
     margin: auto;
-  }
-  .main__form {
-    display: inline-block;
+    text-align: center;
   }
   .main-auto {
     margin-top: 0;
@@ -9765,6 +9865,9 @@ h6 {
     margin-top: 18px;
     width: 190.55px;
     text-align: center;
+  }
+  .main-auto__image {
+    margin: auto;
   }
   .main__button {
     margin-left: 10px;
@@ -9787,7 +9890,19 @@ h6 {
   color: #FF4200;
 }
 
+@media (max-width: 768px) {
+  .main-text__student {
+    margin-top: 18px;
+    width: 190.55px;
+    text-align: center;
+  }
+}
+
 /*Стили для блока student-program*/
+.dop_titl {
+  display: none;
+}
+
 .dop_select {
   width: 378px;
   height: 40px;
@@ -9809,7 +9924,6 @@ h6 {
 
 .dop_title {
   display: inline-block;
-  margin-bottom: 70px;
   width: 536px;
   height: 79px;
   font-family: Montserrat;
@@ -9821,6 +9935,15 @@ h6 {
   font-variant: small-caps;
   color: #004EC2;
   margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .dop_title {
+    display: none;
+  }
+  .dop_titl {
+    display: block;
+  }
 }
 
 /*Стили для блока dop-scule*/
