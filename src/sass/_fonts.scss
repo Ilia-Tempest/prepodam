@@ -1,47 +1,50 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap");
-input[type="checkbox"] { display: none; }
 
-input[type="checkbox"] + label {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 20px;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-}
-
-input[type="checkbox"] + label:last-child { margin-bottom: 0; }
-
-input[type="checkbox"] + label:before {
+input[type="radio"]:checked + label::after {
   content: '';
-  display: block;
-  width: 20px;
-  height: 20px;
-  border: 1px solid;
-  border-radius: 4px;
   position: absolute;
-  left: 0;
-  top: 0;
-  opacity: .6;
-  -webkit-transition: all .12s, border-color .08s;
-  transition: all .12s, border-color .08s;
-}
-
-input[type="checkbox"]:checked + label:before {
-  width: 10px;
-  top: -5px;
-  left: 5px;
-  border-radius: 0;
-  opacity: 1;
-  border-top-color: transparent;
-  border-left-color: transparent;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+  width: 2.1ex;
+  height: 0.9ex;
+  background: rgba(0, 0, 0, 0);
+  top: 0.1ex;
+  left: 0.3ex;
+  border: 4px solid #41F1FC;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-55deg);
 }
 
 input[type="radio"] {
-  -moz-appearance: checkbox;
-  -webkit-appearance: checkbox;
+  line-height: 2.1ex;
 }
+
+input[type="radio"],
+input[type="radio"] {
+  position: absolute;
+  left: -999em;
+}
+
+input[type="radio"] + label {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+input[type="radio"] + label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: -25%;
+  height: 2ex;
+  width: 2ex;
+  margin-bottom: 5px;
+  background-color: white;
+  border: 1px solid rgb(166, 166, 166);
+  border-radius: 4px;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.25);
+  margin-right: 0.5em;
+}
+

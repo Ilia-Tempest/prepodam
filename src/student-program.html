@@ -23,6 +23,7 @@
     <link rel="manifest" href="manifest.json">
     <script defer src="js/libs.min.js"></script>
     <script defer src="js/common.min.js"></script>
+    <script src="js/checkbox.js"></script>
   </head>
   <body>
     <div class="school__container">
@@ -107,8 +108,8 @@
                       </h2>
                       <!-- /.main__title -->
                        <form action="" method="" class="main__form">
-                        <input type="checkbox"id="checkbox"><label for="checkbox">Научный руководитель</label>
-                        <input type="checkbox"id="checkbox-two"><label for="checkbox-two">Репетитор</label>
+                        <input type="radio"id="checkbox" onclick="foo(this)"><label for="checkbox">Научный руководитель</label>
+                        <input type="radio"id="checkbox-two" onclick="foo(this)"><label for="checkbox-two">Репетитор</label>
                        </form>
                        <h3 class="main__title">Подсказка:</h3>
                        <span class="main__text-right">

@@ -6590,6 +6590,7 @@ header .header_wrapper .navigation_conteiner .contacts .contact-city__list {
 
 header .header_wrapper .navigation_conteiner .contacts .contact-city__list .contact-city__item .contact-city_Btn {
   color: #fff;
+  border: none;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -7053,7 +7054,6 @@ input,
 input:active,
 input:focus,
 input:hover {
-  border: none;
   outline: none;
 }
 

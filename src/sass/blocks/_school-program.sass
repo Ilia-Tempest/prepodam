@@ -19,6 +19,10 @@
 .main
   padding-top: 100px
   padding-bottom: 100px
+  &__img-group
+    height: 40px
+    width: 40px
+    display: inline-block
   &_select
     width: 378px
     height: 40px
@@ -34,6 +38,9 @@
     background: linear-gradient(173.5deg, #41F1FC -25.02%, #0F86F3 122.68%); 
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
+    &-one 
+      margin-top: 36px
+      margin-bottom: 36px
   &__text-top
    background: linear-gradient(177.45deg, #41F1FC -25.02%, #0F86F3 122.68%)
    -webkit-background-clip: text
@@ -97,12 +104,48 @@
     -webkit-text-fill-color: transparent
     margin-top: 30px
     margin-bottom: 80px
-  &-auto
+  &__dop
+    border-radius: 10px;
+    border: 1px #41F1FC solid 
+    width: 378px
+    height: 40px
+    &-one
+      display: inline-block
+    &::-webkit-input-placeholder 
+       font-family: Montserrat;
+       font-style: normal;
+       font-weight: normal;
+       font-size: 18px;
+       line-height: 27px;
+       display: flex;
+       align-items: center;
+       letter-spacing: 0.06em;
+       font-variant: small-caps;
+       background: linear-gradient(173.5deg, #41F1FC -85.02%, #0F86F3 122.68%); 
+       -webkit-background-clip: text
+       -webkit-text-fill-color: transparent
+  &__pred
+    width: 297px
+    height: 39px
+    background: linear-gradient(293.96deg, #FF571D 0%, #FE6C39 94.46%)
+    border-radius: 100px
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 43px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    font-variant: small-caps;
+    justify-content: center
+    color: #FFFFFF;
+    margin: auto
     margin-top: 80px
+  &-auto
     display: flex
     align-items: center
     justify-content: space-around
-    padding-bottom: 100px
     &__text
       font-family: Montserrat;
       font-style: normal;
@@ -148,10 +191,6 @@
     letter-spacing: 0.05em;
     font-variant: small-caps;
     color: #000000;
-  &__radio
-    width: 26px
-    height: 26px
-    border-radius: 7px
   &__text-right
     font-family: Montserrat;
     font-style: normal;
@@ -163,7 +202,13 @@
     color: #000000;
     display: inline-block
     margin-top: 30px
+  &__text-dop
+    margin-top: 0
+    margin-bottom: 30px
   &__button
+    display: flex
+    justify-content: center
+    align-items: center
     margin-left: 100px
     margin-top: 50px
     background: linear-gradient(174.2deg, #41F1FC -25.02%, #0F86F3 122.68%);
@@ -184,9 +229,13 @@
  .school_title
    display: none
  .main
+    &__pred
+      margin-top: 35px
     &_select
       width: 327px
       height: 40px
+    &__dop
+      width: 327px
     &__block
       flex-wrap: wrap
       flex-direction: column
@@ -196,7 +245,6 @@
       margin: auto
     &__text-right
       width: 328px
-      height: 385px
     &__item-left
       border: 0
       width: 328px

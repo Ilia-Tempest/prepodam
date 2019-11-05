@@ -104,6 +104,9 @@
                     </div>
                     <!-- /.main__item -->
                     <div class="main__item main__item-right">
+                        <div class="dop_titl">
+                            Школьная программа
+                          </div>
                       <h2 class="main__title">
                           Кто вам нужен?
                       </h2>
@@ -112,14 +115,18 @@
                        <form action="" method="" class="main__form" id="radios">
                          <div class="main__input">
                         <input 
-                        value="scientific-director/class.html" class="main__radio" type="radio" name="field" id="checkbox"><label  class="main__label" for="checkbox">Научный руководитель</label>
+                        value="scientific-director/class.html" class="main__radio" type="radio" name="field" id="checkbox" 
+                        onclick="foo(this)"><label  class="main__label" for="checkbox">Научный руководитель</label>
                       </div>
                       <div class="main__input">
-                        <input value="tutor/class-tutor.html" class="main__radio" type="radio" id="checkbox-two" name="field" checked><label class="main__label" for="checkbox-two">Репетитор</label>
+                        <input value="tutor/class-tutor.html" class="main__radio" 
+                        type="radio" id="checkbox-two" name="field" required onclick="foo(this)"><label class="main__label" for="checkbox-two">Репетитор</label>
                       </div>
                       
+                 
                        <h3 class="main__title">Подсказка:</h3>
                        <span class="main__text-right">
+                         
                           Научный руководитель - это  уникального торгового предложения или же описание названия того или иного продукта, который в первом экране.Описание уникального торгового предложения ил и же описание названия того 
                            <br><br>
                           Репетитор - этоили иного продукта, который в первом экране. писание названия того или иного продукта, который в первом экране. 
@@ -127,6 +134,7 @@
                        <input class="main__button"  type="button" value="Продолжить" onClick="window.location.href = document.querySelectorAll('[name=field]:checked')[0].value"/>
                     </div>
                   </form>
+                  
                     <!-- /.main__item -->
                   </div>
                   <!-- /.main__block -->

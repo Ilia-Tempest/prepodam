@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru" prefix="og: http://ogp.me/ns#">
   <head>
-    <title>Class</title>
+    <title>Service</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="description" content="Page description">
@@ -23,6 +23,12 @@
     <link rel="manifest" href="../../manifest.json">
     <script defer src="../../js/libs.min.js"></script>
     <script defer src="../../js/common.min.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+    </script>
+      <script src="../../js/on-block.js"></script>
   </head>
   <body>
     <div class="school__container">
@@ -102,7 +108,7 @@
                           <!-- /.main-auto-text -->
                       </div>
                       <!-- /.main__auto -->
-                      <a class="main__pred" href="../school-program.html">Предыдущий шаг</a>
+                      <a class="main__pred" href="percent.html">Предыдущий шаг</a>
                     </div>
                     
                     <!-- /.main__item -->
@@ -111,44 +117,52 @@
                           Школьная программа
                         </div>
                       <h2 class="main__title-class">
-                        В каком классе учитесь?
+                          В каком сервисе будут проверять работу 
+                          на плагиат?
                       </h2>
                       <!-- /.main__title -->
                        <form action="" method="" class="main__form">
-                        <select name="" id="" class="main_select">
+                        <select id="test" name="test" class="main_select">
                       <option class="dop_option">
-                        5 класс 
-                        <img class="dop_select-img" src="../../img/school-program/Rectangle.png" alt="dsfs">
+                          антиплагиатВУЗ
                       </option>
                       <option class="dop_option">
-                        6 класс
+                          antiplagiat.ru
                       </option>
                       <option class="dop_option">
-                        7 класс
+                          text.ru
                       </option>
                       <option class="dop_option">
-                        8 класс
+                          etxt.ru
                     </option>
                     <option class="dop_option">
-                       9 класс
+                        advego.com
                   </option>
-                  <option class="dop_option">
-                      10 класс
+                  <option value="a6_54" class="dop_option">
+                     Другое
                   </option>
                    <option class="dop_option">
-                      11 класс
+                      проверка не требуется
                  </option>
                           <!-- /.option -->
                         </select>
                         <!-- /# -->
                        </form>
+                       <div id="container">
+                          <div id="a6_54" class="main__text-right main__text-dop">
+                             <form action="" method="">
+                               <input class="main__dop" type="text" placeholder="Введите ваш вариант:">
+                             </form>
+                          </div>
+                         </div>
                        <h3 class="main__title-class">Подсказка:</h3>
-                       <span class="main__text-right">
+                       <div class="main__text-right">
                           Научный руководитель - это  уникального торгового предложения или же описание названия того или иного продукта, который в первом экране.Описание уникального торгового предложения ил и же описание названия того 
-                           <br><br>
-                          Репетитор - этоили иного продукта, который в первом экране. писание названия того или иного продукта, который в первом экране. 
-                       </span>
-                       <a class="main__button" href="scientific-work.html">
+                          <br><br>
+                         Репетитор - этоили иного продукта, который в первом экране. писание названия того или иного продукта, который в первом экране. 
+                      </div>
+                       
+                       <a class="main__button" href="date.html">
                          Продолжить
                        </a>
                     </div>

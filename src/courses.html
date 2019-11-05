@@ -23,6 +23,7 @@
     <link rel="manifest" href="manifest.json">
     <script defer src="js/libs.min.js"></script>
     <script defer src="js/common.min.js"></script>
+    <script src="js/checkbox.js"></script>
   </head>
   <body>
         <header>
@@ -274,12 +275,12 @@
                 </select>
                 <h3 class="form__answer">С какой целью хотите пройти курс?</h3>
                 <div class="form__checkbox">
-                <div class="form__item"><input name="about" id="i" type="checkbox"><label class="form__in" for="i">Для себя</label></div>
+                <div class="form__item"><input name="about" id="i" type="radio" onclick="foo(this)"><label class="form__in" for="i">Для себя</label></div>
                 <div class="form__item">
-                  <input name="about" id="work" type="checkbox"><label class="form__in" for="work">Для работы</label>
+                  <input name="about" id="work" type="radio" onclick="foo(this)"><label class="form__in" for="work">Для работы</label>
                 </div>
                 <div class="form__item">
-                <input name="about" id="biznes" type="checkbox"><label class="form__in" for="biznes">Для бизнеса</label>
+                <input name="about" id="biznes" type="radio" onclick="foo(this)"><label class="form__in" for="biznes">Для бизнеса</label>
               </div>
               </div>
               <h3 class="form__answer">Сколько бы вы заплатили за курс?</h3>
