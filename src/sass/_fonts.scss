@@ -48,3 +48,43 @@ input[type="radio"] + label::before {
   margin-right: 0.5em;
 }
 
+.file-upload input[type="file"]{
+
+  display: none;/* скрываем input file */
+  
+  }
+  
+  /* задаем стили кнопки выбора файла*/
+  
+  .file-upload {
+  
+  position: relative;
+  
+  overflow: hidden;
+  
+  width: 250px;
+  
+  height: 40px;
+
+  
+  border-radius: 10px;
+  
+  color: black;
+
+  }
+  
+  /* стиль текста на кнопке*/
+  
+  .file-upload span {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    font-variant: small-caps;
+    color: #FF0000;
+  
+  }
+
+
