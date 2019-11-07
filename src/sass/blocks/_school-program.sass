@@ -1,5 +1,7 @@
 input [type=file]
   color: #FF0000
+#file-name1
+  margin-bottom: 15px
 .school__container
   background: linear-gradient(87.53deg, #0f1012 -70.47%, #393b3f 103.27%);
   padding-bottom: 20px
@@ -87,6 +89,8 @@ input [type=file]
     background: #333333
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
+    &-two
+      margin-top: 0
     &:first-child
       margin-top: 0
   &__title-class
@@ -240,6 +244,19 @@ input [type=file]
     font-size: 18px;
   &__text-one
      margin-bottom: 25px
+
+@media (max-width: 1150px)
+  .school_title
+    width: 400px
+  .main
+    &__item-right
+      margin-left: 30px
+    &__item-left
+      padding-right: 20px
+    &__button
+      margin-left: auto
+      margin-right: auto
+      
 
 @media (max-width: 768px)
  .school_title

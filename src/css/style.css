@@ -9592,6 +9592,10 @@ input [type=file] {
   color: #FF0000;
 }
 
+#file-name1 {
+  margin-bottom: 15px;
+}
+
 .school__container {
   background: linear-gradient(87.53deg, #0f1012 -70.47%, #393b3f 103.27%);
   padding-bottom: 20px;
@@ -9714,6 +9718,10 @@ input [type=file] {
   background: #333333;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.main__title-two {
+  margin-top: 0;
 }
 
 .main__title:first-child {
@@ -9934,6 +9942,22 @@ input [type=file] {
 
 .main__text-one {
   margin-bottom: 25px;
+}
+
+@media (max-width: 1150px) {
+  .school_title {
+    width: 400px;
+  }
+  .main__item-right {
+    margin-left: 30px;
+  }
+  .main__item-left {
+    padding-right: 20px;
+  }
+  .main__button {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (max-width: 768px) {
