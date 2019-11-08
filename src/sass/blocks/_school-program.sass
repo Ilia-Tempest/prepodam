@@ -29,7 +29,7 @@ input [type=file]
     border-radius: 10px 
     width: 378px
     height: 100px
-    color: #41F1FC 
+    color: #0F86F3 
   &__file
     margin-bottom: 35px
     color: red
@@ -104,6 +104,8 @@ input [type=file]
     background: #333333
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
+  &__title-thanks
+    font-size: 25px
   &__subtitle
     width: 407px
     height: 80px
@@ -120,6 +122,8 @@ input [type=file]
     -webkit-text-fill-color: transparent
     margin-top: 30px
     margin-bottom: 80px
+    &-final
+      margin-bottom: 0
   &__dop
     border-radius: 10px;
     border: 1px #41F1FC solid 
@@ -141,9 +145,7 @@ input [type=file]
        align-items: center;
        letter-spacing: 0.06em;
        font-variant: small-caps;
-       background: linear-gradient(173.5deg, #41F1FC -85.02%, #0F86F3 122.68%); 
-       -webkit-background-clip: text
-       -webkit-text-fill-color: transparent
+       color: #0F86F3
   &__pred
     width: 297px
     height: 39px
@@ -190,6 +192,9 @@ input [type=file]
   &__item-right
     margin-left: 68px
     width: 621px
+  &__item-thanks
+    padding-bottom: 150px
+    border: none
   &__form
     margin-top: 35px
     margin-bottom: 35px
@@ -242,6 +247,10 @@ input [type=file]
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
+    &-thanks
+      width: 353px;
+      height: 39px;
+      margin-left: 0
   &__text-one
      margin-bottom: 25px
 
@@ -257,7 +266,14 @@ input [type=file]
       margin-left: auto
       margin-right: auto
       
-
+@media (max-width: 875px)
+  .main
+    &__block
+      flex-wrap: wrap
+    &__item-right
+      margin-top: 60px
+    &__item-thanks
+      padding-bottom: 50px
 @media (max-width: 768px)
  .school_title
    display: none
@@ -278,6 +294,8 @@ input [type=file]
       margin-left: 0
       width: 328px
       margin: auto
+    &__item-thanks
+      padding-bottom: 0
     &__text-right
       width: 328px
     &__item-left
@@ -300,6 +318,9 @@ input [type=file]
         margin: auto
     &__button
       margin-left: 10px
+      &-thanks
+        width: 300px
+        height: 39px
     &__subtitle 
       width: 328px
       height: 112px
