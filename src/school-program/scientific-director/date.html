@@ -23,7 +23,19 @@
     <link rel="manifest" href="../../manifest.json">
     <script defer src="../../js/libs.min.js"></script>
     <script defer src="../../js/common.min.js"></script>
-  </head>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+    </script>
+      <link rel="stylesheet" href="../../css/bootstrap-datepicker.css">
+      <script src="../../js/bootstrap-datepicker.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
+    <script src="jquery-ui-i18n.js"></script>
+    <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/sunny/jquery-ui.css">
+    <script src="../../js/date.js"></script>
+</head>
   <body>
     <div class="school__container">
           <header>
@@ -102,6 +114,7 @@
                           <!-- /.main-auto-text -->
                       </div>
                       <!-- /.main__auto -->
+
                       <a class="main__pred" href="service.html">Предыдущий шаг</a>
                     </div>
                     
@@ -113,15 +126,19 @@
                       <h2 class="main__title-class">
                           Сроки готовности
                       </h2>
+                     
                       <!-- /.main__title -->
-                       <form action="" method="" class="main__form">
-                       <input placeholder="Кол-во страниц" class="main__dop main__dop-one" type="date">
+                       <form action="" method="" >
+                       <div id="dpcontainer" class="ui-widget main__row">  
+                          <input placeholder="Написать конкретную дату" class="main__dop" id="datep"/>
+                      </div>
                        </form>
-                       
+               
                        <h3 class="main__title-class">Подсказка:</h3>
                        <span class="main__text-right">
                           Если точная дата не известна, укажите примерные число и месяц, раньше которых сдача работы не планируется.
                        </span>
+                       
                        <a class="main__button" href="download.html">
                          Продолжить
                        </a>
@@ -138,6 +155,7 @@
         </div>
       </section>
     </div>
+   
         <footer>
           <div class="footer_wrapper">
             <div class="footer-soc"><a class="footer-logo_container" href=""><img src="../../img/icons/logo.svg" alt="alt"></a>
@@ -179,3 +197,6 @@
         </footer>
   </body>
 </html>
+
+
+

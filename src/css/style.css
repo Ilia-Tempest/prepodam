@@ -11,6 +11,10 @@
   display: none;
 }
 
+a {
+  border: none;
+}
+
 /*Общие стили*/
 input[type="radio"]:checked + label::after {
   content: '';
@@ -44,6 +48,52 @@ input[type="radio"] + label {
 }
 
 input[type="radio"] + label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: -25%;
+  height: 2ex;
+  width: 2ex;
+  margin-bottom: 5px;
+  background-color: white;
+  border: 1px solid #a6a6a6;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.25);
+  margin-right: 0.5em;
+}
+
+input[type="checkbox"]:checked + label::after {
+  content: '';
+  position: absolute;
+  width: 2.1ex;
+  height: 0.9ex;
+  background: rgba(0, 0, 0, 0);
+  top: 0.1ex;
+  left: 0.3ex;
+  border: 4px solid #41F1FC;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-55deg);
+}
+
+input[type="checkbox"] {
+  line-height: 2.1ex;
+}
+
+input[type="checkbox"],
+input[type="checkbox"] {
+  position: absolute;
+  left: -999em;
+}
+
+input[type="checkbox"] + label {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
   content: "";
   display: inline-block;
   vertical-align: -25%;
@@ -9588,8 +9638,18 @@ h6 {
 
 /*Стили для блока index.html*/
 /*Стили для блока index.html*/
+#dpcontainer img {
+  width: 40px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
 input [type=file] {
   color: #FF0000;
+}
+
+.maps {
+  width: 625px;
 }
 
 #file-name1 {
@@ -9606,7 +9666,7 @@ input [type=file] {
   display: inline-block;
   width: 566px;
   height: 79px;
-  font-family: Montserrat;
+  font-family: Montserrat, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
@@ -9621,6 +9681,66 @@ input [type=file] {
 .main {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.main__clock {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-color: linear-gradient(176.09deg, #41F1FC -25.02%, #0F86F3 122.68%);
+}
+
+.main__clock:last-child {
+  margin-bottom: 0;
+}
+
+.main__clock-title {
+  font-family: Montserrat, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  font-variant: small-caps;
+  color: #333333;
+  margin-right: 15px;
+  width: 35px;
+}
+
+.main__clock-button {
+  width: 189px;
+  border-radius: 10px;
+  height: 40px;
+  border: #41F1FC 1px solid;
+  font-family: Montserrat, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.06em;
+  font-variant: small-caps;
+  color: #41F1FC;
+  margin-right: 4px;
+}
+
+.main__clock-button:last-child {
+  margin-right: none;
+}
+
+.main__clock-button:focus {
+  background: linear-gradient(174.2deg, #41F1FC -25.02%, #0F86F3 122.68%);
+  color: #FFFFFF;
+}
+
+.main_top {
+  margin-top: 35px;
 }
 
 .main__textarea {
@@ -9648,7 +9768,7 @@ input [type=file] {
   height: 40px;
   border-radius: 10px;
   border: 1px #41F1FC solid;
-  font-family: Montserrat;
+  font-family: Montserrat, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -9669,7 +9789,7 @@ input [type=file] {
   background: linear-gradient(177.45deg, #41F1FC -25.02%, #0F86F3 122.68%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: Montserrat;
+  font-family: Montserrat, serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -9708,7 +9828,7 @@ input [type=file] {
 
 .main__title {
   margin-top: 35px;
-  font-family: Montserrat;
+  font-family: Montserrat,serif;
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -9720,6 +9840,10 @@ input [type=file] {
   -webkit-text-fill-color: transparent;
 }
 
+.main__title-clock {
+  margin-bottom: 35px;
+}
+
 .main__title-two {
   margin-top: 0;
 }
@@ -9729,7 +9853,7 @@ input [type=file] {
 }
 
 .main__title-class {
-  font-family: Montserrat;
+  font-family: Montserrat,serif;
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -9749,7 +9873,7 @@ input [type=file] {
   width: 407px;
   height: 80px;
   display: inline-block;
-  font-family: Montserrat;
+  font-family: Montserrat, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -9775,14 +9899,12 @@ input [type=file] {
 }
 
 .main__dop-one {
-  display: inline-block;
-  background-image: url(../img/school-program/Group.png);
-  background-repeat: no-repeat;
-  background-position: right 10px center;
+  width: 40px;
+  margin-left: 10px;
 }
 
 .main__dop::-webkit-input-placeholder {
-  font-family: Montserrat;
+  font-family: Montserrat, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -9796,12 +9918,23 @@ input [type=file] {
   color: #0F86F3;
 }
 
+.main__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
 .main__pred {
   width: 297px;
   height: 39px;
   background: linear-gradient(293.96deg, #FF571D 0%, #FE6C39 94.46%);
   border-radius: 100px;
-  font-family: Montserrat;
+  font-family: Montserrat, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -9834,7 +9967,7 @@ input [type=file] {
 }
 
 .main-auto__text {
-  font-family: Montserrat;
+  font-family: Montserrat, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
@@ -9866,7 +9999,7 @@ input [type=file] {
 }
 
 .main__item-thanks {
-  padding-bottom: 150px;
+  padding-bottom: 80px;
   border: none;
 }
 
@@ -9889,7 +10022,11 @@ input [type=file] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 10px;
+  margin-top: 20px;
+}
+
+.main__input-name {
+  margin-top: 35px;
 }
 
 .main__input:first-child {
@@ -9897,8 +10034,7 @@ input [type=file] {
 }
 
 .main__label {
-  margin-left: 10px;
-  font-family: Montserrat;
+  font-family: Montserrat, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -9909,7 +10045,7 @@ input [type=file] {
 }
 
 .main__text-right {
-  font-family: Montserrat;
+  font-family: Montserrat, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -9945,7 +10081,7 @@ input [type=file] {
   letter-spacing: 0.05em;
   font-variant: small-caps;
   color: #FFFFFF;
-  font-family: Montserrat;
+  font-family: Montserrat, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -9965,6 +10101,24 @@ input [type=file] {
   .school_title {
     width: 400px;
   }
+  .clock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main__clock {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main__clock-button {
+    margin-bottom: 10px;
+  }
   .main__item-right {
     margin-left: 30px;
   }
@@ -9974,6 +10128,46 @@ input [type=file] {
   .main__button {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media (max-width: 1400px) {
+  .clock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main__clock {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main__clock-button {
+    margin-bottom: 10px;
+  }
+  .main__item-right {
+    margin-left: 30px;
+  }
+  .main__item-left {
+    padding-right: 20px;
+  }
+  .main__button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 930px) {
+  .main__dop {
+    width: 300px;
+  }
+  .main__comment {
+    width: 378px;
   }
 }
 
@@ -9991,8 +10185,37 @@ input [type=file] {
 }
 
 @media (max-width: 768px) {
+  .clock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main__clock-title {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-right: 0;
+  }
   .school_title {
     display: none;
+  }
+  .maps {
+    width: 400px;
+  }
+  .main__clock {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main__clock-button {
+    margin-bottom: 10px;
   }
   .main__textarea {
     width: 327px;

@@ -23,6 +23,12 @@
     <link rel="manifest" href="../../manifest.json">
     <script defer src="../../js/libs.min.js"></script>
     <script defer src="../../js/common.min.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+    </script>
+      <script src="../../js/on-block.js"></script>
   </head>
   <body>
     <div class="school__container">
@@ -114,13 +120,34 @@
                         Тема вашего исследования?
                       </h2>
                       <!-- /.main__title -->
-                       <form action="" method="" class="main__form">
-                        <input placeholder="Тема вашего исследования:" type="text" class="main__dop">
+                      <form action="" method="" class="main__form">
+                        <select id="test" name="test" class="main_select">
+                      <option disabled selected class="dop_option">
+                          Тема вашего исследования:
+                      </option>
+                  <option value="a6_54" class="dop_option">
+                    Введите тему исследования:
+                  </option>
+                  <option class="dop_option">
+                    Пока не известно
+                   </option>
+                          <!-- /.option -->
+                        </select>
+                        <!-- /# -->
                        </form>
+                       <div id="container">
+                          <div id="a6_54" class="main__text-right main__text-dop">
+                             <form action="" method="">
+                               <input class="main__dop" type="text" placeholder="Введите тему исследования:">
+                             </form>
+                          </div>
+                         </div>
                        <h3 class="main__title-class">Подсказка:</h3>
-                       <span class="main__text-right">
-                          начните вводить название предмета и выберите из появившегося списка наиболее подходящий вариант.
-                       </span>
+                       <div class="main__text-right">
+                          Научный руководитель - это  уникального торгового предложения или же описание названия того или иного продукта, который в первом экране.Описание уникального торгового предложения ил и же описание названия того 
+                          <br><br>
+                         Репетитор - этоили иного продукта, который в первом экране. писание названия того или иного продукта, который в первом экране. 
+                      </div>
                        <a href="number-title.html" class="main__button">
                          Продолжить
                        </a>
