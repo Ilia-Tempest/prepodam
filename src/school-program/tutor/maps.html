@@ -23,12 +23,33 @@
     <link rel="manifest" href="../../manifest.json">
     <script defer src="../../js/libs.min.js"></script>
     <script defer src="../../js/common.min.js"></script>
+    <script src="../../js/city.js"></script>
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous">
     </script>
       <script src="../../js/on-block.js"></script>
+      <script src="https://api-maps.yandex.ru/2.0-stable/?apikey=ваш API-ключ&load=package.standard&lang=ru-RU" type="text/javascript"></script>
+      <script type="text/javascript">
+          ymaps.ready(init);
+          var myMap, 
+              myPlacemark;
+  
+          function init(){ 
+              myMap = new ymaps.Map ("map", {
+                  center: [55.76, 37.64],
+                  zoom: 7
+              }); 
+              
+              myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+                  hintContent: 'Москва!',
+                  balloonContent: 'Столица России'
+              });
+              
+              myMap.geoObjects.add(myPlacemark);
+          }
+      </script>
   </head>
   <body>
     <div class="school__container">
@@ -91,7 +112,7 @@
                   <div class="main__block">
                     <div class="main__item main__item-left">
                       <h1 class="main__title">
-                          Проподаватели(автоподсчёт)
+                          Преподаватели(автоподсчёт)
                       </h1>
                       <!-- /.main__title -->
                       <span class="main__subtitle">
@@ -142,17 +163,19 @@
                   </option>
                           <!-- /.option -->
                         </select>
+                        <div>
+                          <label for="address">Адрес: <input type="text" id="address" style="width: 400px;"> </label>
+                          </div>
+                          
                         <!-- /# -->
                         <form action="" method="" class="main__form">
                         <input placeholder="Улица" type="text" class="main__dop main__comment">
                        </form>
                      
-                       <div class="maps" style="overflow:hidden;width: 625px;position: relative;"><iframe width="625" height="267" 
-                        src="https://maps.google.com/maps?width=625&amp;height=267&amp;hl=en&amp;q=Moscov+(%D0%9D%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="https://embedgooglemaps.com/fr/">embedgooglemaps FR</a> & <a href="https://iamsterdamcard.it">www.iamsterdamcard.it</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}
-                        </style>
-                        </div>
+                       <div id="map" style="width: 625px; height: 267px"></div>
+
                         <br />
-                       
+                       <input id="Address" value="" />
                        <a class="main__button" href="clock.html">
                          Продолжить
                        </a>
@@ -208,5 +231,16 @@
             </div>
           </div>
         </footer>
+        <script>
+
+// Выпадающая панель с поисковыми подсказками
+// https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/reference/SuggestView-docpage/
+var suggestView = new ymaps.SuggestView(
+    'address', // ID input'а
+    {
+        offset: [-2, 3], // Отступы панели подсказок от её положения по умолчанию. Задаётся в виде смещений по горизонтали и вертикали относительно левого нижнего угла элемента input.
+        width: 300, // Ширина панели подсказок
+        results: 3, // Максимальное количество показываемых подсказок.
+    });</script>
   </body>
 </html>
