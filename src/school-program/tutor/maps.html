@@ -31,6 +31,9 @@
     </script>
       <script src="../../js/on-block.js"></script>
       <script src="https://api-maps.yandex.ru/2.0-stable/?apikey=ваш API-ключ&load=package.standard&lang=ru-RU" type="text/javascript"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/suggestions-jquery@19.8.0/dist/css/suggestions.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/suggestions-jquery@19.8.0/dist/js/jquery.suggestions.min.js"></script>
       <script type="text/javascript">
           ymaps.ready(init);
           var myMap, 
@@ -48,7 +51,18 @@
               });
               
               myMap.geoObjects.add(myPlacemark);
+
           }
+          // Создание элемента управления «Поиск по карте».
+var searchControl = new ymaps.control.SearchControl({
+        options: {
+            // Будет производиться поиск только по топонимам.
+            provider: 'yandex#map'
+        }
+    });
+
+// Добавляем элемент управления на карту.
+myMap.controls.add(searchControl);
       </script>
   </head>
   <body>
@@ -141,41 +155,18 @@
                           Укажите ваш адрес
                       </h2>
                       <!-- /.main__title -->
-                       
-                        <select id="test" name="test" class="main_top main_select">
-                            <option selected disabled class="dop_option">
-                                Город
-                           </option>
-                      <option class="dop_option">
-                          Москва
-                      </option>
-                      <option class="dop_option">
-                          Пермь
-                      </option>
-                      <option class="dop_option">
-                          Казань 
-                      </option>
-                      <option class="dop_option">
-                          Рязань
-                    </option>
-                    <option class="dop_option">
-                        Калининград
-                  </option>
-                          <!-- /.option -->
-                        </select>
-                        <div>
-                          <label for="address">Адрес: <input type="text" id="address" style="width: 400px;"> </label>
-                          </div>
-                          
-                        <!-- /# -->
+    
                         <form action="" method="" class="main__form">
-                        <input placeholder="Улица" type="text" class="main__dop main__comment">
+                            <input placeholder="Город"  class="main__dop" id="city"  name="city" type="text" />
+  
+                            <input placeholder="Улица"  class="main__dop" id="street" name="street" type="text" />
+                            
                        </form>
                      
-                       <div id="map" style="width: 625px; height: 267px"></div>
+                       <div id="map"></div>
 
                         <br />
-                       <input id="Address" value="" />
+                       
                        <a class="main__button" href="clock.html">
                          Продолжить
                        </a>
@@ -231,16 +222,39 @@
             </div>
           </div>
         </footer>
-        <script>
-
-// Выпадающая панель с поисковыми подсказками
-// https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/reference/SuggestView-docpage/
-var suggestView = new ymaps.SuggestView(
-    'address', // ID input'а
-    {
-        offset: [-2, 3], // Отступы панели подсказок от её положения по умолчанию. Задаётся в виде смещений по горизонтали и вертикали относительно левого нижнего угла элемента input.
-        width: 300, // Ширина панели подсказок
-        results: 3, // Максимальное количество показываемых подсказок.
-    });</script>
+        <script>  // Замените на свой API-ключ
+            var token = "1248895506e1ffd92683d1b73ffc20d6d46facb4";
+            var $city   = $("#city");
+            var $street = $("#street");
+            var $house  = $("#house");
+            
+            // город и населенный пункт
+            $city.suggestions({
+              token: token,
+              type: "ADDRESS",
+              hint: false,
+              bounds: "city-settlement"
+            });
+            
+            // улица
+            $street.suggestions({
+              token: token,
+              type: "ADDRESS",
+              hint: false,
+              bounds: "street",
+              constraints: $city
+            });
+            
+            // дом
+            $house.suggestions({
+              token: token,
+              type: "ADDRESS",
+              hint: false,
+              noSuggestionsHint: false,
+              bounds: "house",
+              constraints: $street
+            });
+            </script>
+        
   </body>
 </html>
