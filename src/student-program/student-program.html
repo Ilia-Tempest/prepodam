@@ -24,6 +24,7 @@
     <script defer src="../js/libs.min.js"></script>
     <script defer src="../js/common.min.js"></script>
     <script src="../js/checkbox.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="school__container">
@@ -107,70 +108,79 @@
                           Кто вам нужен?
                       </h2>
                       <!-- /.main__title -->
-                       <form action="" method="" class="main__form">
-                        <input type="radio"id="checkbox" onclick="foo(this)"><label for="checkbox">Научный руководитель</label>
-                        <input type="radio"id="checkbox-two" onclick="foo(this)"><label for="checkbox-two">Репетитор</label>
-                       </form>
-                       <h3 class="main__title">Подсказка:</h3>
-                       <span class="main__text-right">
-                          Научный руководитель - это  уникального торгового предложения или же описание названия того или иного продукта, который в первом экране.Описание уникального торгового предложения ил и же описание названия того 
-                           <br><br>
-                          Репетитор - этоили иного продукта, который в первом экране. писание названия того или иного продукта, который в первом экране. 
-                       </span>
-                       <button class="main__button">
-                         Продолжить
-                       </button>
-                    </div>
-                    <!-- /.main__item -->
-                  </div>
-                  <!-- /.main__block -->
-                </section>
-                <!-- /.main -->
-              </main>
-            </div>
-          </div>
-          
-        </div>
-      </section>
-    </div>
-        <footer>
-          <div class="footer_wrapper">
-            <div class="footer-soc"><a class="footer-logo_container" href="../index.html"><img src="../img/icons/logo.svg" alt="alt"></a>
-              <ul class="footer-cos__list">
-                <li><a class="footer-soc__link" href="https://vk.com/prep0dam"><i class="fab fa-vk"></i></a></li>
-                <li><a class="footer-soc__link" href="https://www.instagram.com/prep0dam/"><i class="fab fa-instagram"></i></a></li>
-                <li><a class="footer-soc__link" href="https://www.facebook.com/prep0dam/"><i class="fab fa-facebook-f"></i></a></li>
-              </ul>
-            </div>
-            <nav class="footer-navigation">
-              <ul class="footer-nav footer-site-nav">
-                <li><a class="footer-nav__item footer-nav__item_title" href="../aboutUs.html">Об Академии</a></li>
-                <li><a class="footer-nav__item" href="../questionsAndAnswers.html">Вопрос-Ответ</a></li>
-                <li><a class="footer-nav__item" href="../variate.html">Cоздать заказ</a></li>
-                <li><a class="footer-nav__item" href="../articles.html">Статьи</a></li>
-                <li><a class="footer-nav__item" href="../courses.html">Онлайн-курсы</a></li>
-              </ul>
-              <ul class="footer-nav footer-persone-nav">
-                <li><a class="footer-nav__item" href="">Вход для преподавателей</a></li>
-                <li><a class="footer-nav__item" href="../vacancy.html">Вакансии</a></li>
-                <li><a class="footer-nav__item" href="../siteRules.html">Правила сайта</a></li>
-                <li><a class="footer-nav__item" href="">Карта сайта</a></li>
-              </ul>
-            </nav>
-            <div class="footer-information">
-              <p class="footer-information_text">Поддержка 8-800-00-00</p>
-              <p class="footer-information_text">Будние дни с 8:00 до 22:00</p>
-              <p class="footer-information_text">Выходные с 10:00 до 22:00</p>
-              <p class="footer-information_text">По вопросам сотрудничества</p>
-              <p class="footer-information_text">пишите на почту: prepod@gmail.com</p>
-            </div>
-          </div>
-          <div class="copyright">
-            <div class="wrapper copyright_wrapper">
-              <p class="copyright_text">2019 все права защищены  </p>
-              <div class="footer_sub-logo"><img src="../img/icons/footer_logo.svg" alt="Telwas"></div>
-            </div>
-          </div>
-        </footer>
-  </body>
-</html>
+                      <form action="" method="" class="main__form" id="radios">
+                          <div class="main__input">
+                         <input 
+                         value="scientific-director/university.html" class="main__r" type="radio" name="field" id="checkbox" 
+                         onclick="foo(this)"><label  class="main__label" for="checkbox">Научный руководитель</label>
+                       </div>
+                       <div class="main__input">
+                         <input value="tutor/class-tutor.html" class="main__r" 
+                         type="radio" id="checkbox-two" name="field" required onclick="foo(this)"><label class="main__label" for="checkbox-two">Репетитор</label>
+                       </div>
+                       
+                  
+                        <h3 class="main__title">Подсказка:</h3>
+                        <span class="main__text-right">
+                          
+                           Научный руководитель - это  уникального торгового предложения или же описание названия того или иного продукта, который в первом экране.Описание уникального торгового предложения ил и же описание названия того 
+                            <br><br>
+                           Репетитор - этоили иного продукта, который в первом экране. писание названия того или иного продукта, который в первом экране. 
+                        </span>
+                        <input class="main__button"  type="button" value="Продолжить" onClick="window.location.href = document.querySelectorAll('[name=field]:checked')[0].value"/>
+                     </div>
+                   </form>
+                   
+                     <!-- /.main__item -->
+                   </div>
+                   <!-- /.main__block -->
+                 </section>
+                 <!-- /.main -->
+               </main>
+             </div>
+           </div>
+           
+         </div>
+       </section>
+     </div>
+         <footer>
+           <div class="footer_wrapper">
+             <div class="footer-soc"><a class="footer-logo_container" href=""><img src="../img/icons/logo.svg" alt="alt"></a>
+               <ul class="footer-cos__list">
+                 <li><a class="footer-soc__link" href="https://vk.com/prep0dam"><i class="fab fa-vk"></i></a></li>
+                 <li><a class="footer-soc__link" href="https://www.instagram.com/prep0dam/"><i class="fab fa-instagram"></i></a></li>
+                 <li><a class="footer-soc__link" href="https://www.facebook.com/prep0dam/"><i class="fab fa-facebook-f"></i></a></li>
+               </ul>
+             </div>
+             <nav class="footer-navigation">
+               <ul class="footer-nav footer-site-nav">
+                 <li><a class="footer-nav__item footer-nav__item_title" href="../aboutUs.html">Об Академии</a></li>
+                 <li><a class="footer-nav__item" href="../questionsAndAnswers.html">Вопрос-Ответ</a></li>
+                 <li><a class="footer-nav__item" href="">Cоздать заказ</a></li>
+                 <li><a class="footer-nav__item" href="../articles.html">Статьи</a></li>
+                 <li><a class="footer-nav__item" href="../courses.html">Онлайн-курсы</a></li>
+               </ul>
+               <ul class="footer-nav footer-persone-nav">
+                 <li><a class="footer-nav__item" href="">Вход для преподавателей</a></li>
+                 <li><a class="footer-nav__item" href="../vacancy.html">Вакансии</a></li>
+                 <li><a class="footer-nav__item" href="../siteRules.html">Правила сайта</a></li>
+                 <li><a class="footer-nav__item" href="">Карта сайта</a></li>
+               </ul>
+             </nav>
+             <div class="footer-information">
+               <p class="footer-information_text">Поддержка 8-800-00-00</p>
+               <p class="footer-information_text">Будние дни с 8:00 до 22:00</p>
+               <p class="footer-information_text">Выходные с 10:00 до 22:00</p>
+               <p class="footer-information_text">По вопросам сотрудничества</p>
+               <p class="footer-information_text">пишите на почту: prepod@gmail.com</p>
+             </div>
+           </div>
+           <div class="copyright">
+             <div class="wrapper copyright_wrapper">
+               <p class="copyright_text">2019 все права защищены  </p>
+               <div class="footer_sub-logo"><img src="../img/icons/footer_logo.svg" alt="Telwas"></div>
+             </div>
+           </div>
+         </footer>
+   </body>
+ </html>

@@ -122,61 +122,64 @@
                       <div class="main__clock">
                         <span class="main__clock-title">Пн</span>
                         <!-- /.main__clock-title -->
-                        <input class="main__clock-button main__clock-button-one" value="с 8:00 до 12:00" type="button">
-                        <input class="main__clock-button main__clock-button-one" value="с 12:00 до 17:00" type="button">
-                        <input class="main__clock-button main__clock-button-one" value="с 12:00 до 17:00" type="button">
+                        <div class="main__clock-button item"><span>с 8:00 до 12:00</span></div>
+                        <div class="main__clock-button item"><span>с 12:00 до 17:00</span></div>
+                        <div class="main__clock-button item"><span>с 12:00 до 17:00</span></div>
                       </div>
                       <!-- /.main__clock -->
                       <div class="main__clock">
                         <span class="main__clock-title">Вт</span>
                         <!-- /.main__clock-title -->
-                        <input tabindex="-1" class="main__clock-button main__clock-button-two" value="с 8:00 до 12:00" type="button">
-                        <input tabindex="-1" class="main__clock-button main__clock-button-two" value="с 12:00 до 17:00" type="button">
-                        <input tabindex="-1" class="main__clock-button main__clock-button-two" value="с 12:00 до 17:00" type="button">
+                        <div class="main__clock-button item"><span>с 8:00 до 12:00</span></div>
+                        <div class="main__clock-button item"><span>с 12:00 до 17:00</span></div>
+                        <div class="main__clock-button item"><span>с 12:00 до 17:00</span></div>
                       </div>
                       <!-- /.main__clock -->
                       <div class="main__clock">
                         <span class="main__clock-title">Ср</span>
                         <!-- /.main__clock-title -->
-                        <input class="main__clock-button" value="с 8:00 до 12:00" type="button">
-                        <input class="main__clock-button" value="с 12:00 до 17:00" type="button">
-                        <input class="main__clock-button" value="с 12:00 до 17:00" type="button">
+                        <div class="main__clock-button item"><span>с 8:00 до 12:00</span></div>
+                        <div class="main__clock-button item"><span>с 12:00 до 17:00</span></div>
+                        <div class="main__clock-button item"><span>с 12:00 до 17:00</span></div>
                       </div>
                       <!-- /.main__clock -->
                       <div class="main__clock">
                         <span class="main__clock-title">Чт</span>
                         <!-- /.main__clock-title -->
-                        <input class="main__clock-button" value="с 8:00 до 12:00" type="button">
-                        <input class="main__clock-button" value="с 12:00 до 17:00" type="button">
-                        <input class="main__clock-button" value="с 12:00 до 17:00" type="button">
+                        <div class="main__clock-button item"><span>с 8:00 до 12:00</span></div>
+                        <div class="main__clock-button item"><span>с 12:00 до 17:00</span></div>
+                        <div class="main__clock-button item"><span>с 12:00 до 17:00</span></div>
                       </div>
                       <!-- /.main__clock -->
                       <div class="main__clock">
                         <span class="main__clock-title">Пт</span>
                         <!-- /.main__clock-title -->
-                        <input class="main__clock-button" value="с 8:00 до 12:00" type="button">
-                        <input class="main__clock-button" value="с 12:00 до 17:00" type="button">
-                        <input class="main__clock-button" value="с 12:00 до 17:00" type="button">
+                        <div class="main__clock-button item"><span>с 8:00 до 12:00</span></div>
+                        <div class="main__clock-button item"><span>с 12:00 до 17:00</span></div>
+                        <div class="main__clock-button item"><span>с 12:00 до 17:00</span></div>
                       </div>
                       <!-- /.main__clock -->
                       <div class="main__clock">
                         <span class="main__clock-title">Сб</span>
                         <!-- /.main__clock-title -->
-                        <input class="main__clock-button" value="с 8:00 до 12:00" type="button">
-                        <input class="main__clock-button" value="с 12:00 до 17:00" type="button">
-                        <input class="main__clock-button" value="с 12:00 до 17:00" type="button">
+                        <div class="main__clock-button item"><span>с 8:00 до 12:00</span></div>
+                        <div class="main__clock-button item"><span>с 12:00 до 17:00</span></div>
+                        <div class="main__clock-button item"><span>с 12:00 до 17:00</span></div>
                       </div>
                       <!-- /.main__clock -->
                       <div class="main__clock">
                         <span class="main__clock-title">Вс</span>
                         <!-- /.main__clock-title -->
-                        <input class="main__clock-button" value="с 8:00 до 12:00" type="button">
-                        <input class="main__clock-button" value="с 12:00 до 17:00" type="button">
-                        <input class="main__clock-button" value="с 12:00 до 17:00" type="button">
+                        
+                        <div class="main__clock-button item">8:00 до 12:00</div>
+                        <div class="main__clock-button item"><span>с 12:00 до 17:00</span></div>
+                        <div class="main__clock-button item">с 12:00 до 17:00</div>
                       </div>
                     </div>
                       <!-- /.main__clock -->
-                       
+                      
+                        
+                    
                        <a class="main__button" href="rate.html">
                          Продолжить
                        </a>
@@ -192,6 +195,18 @@
           
         </div>
       </section>
+      <script>
+    $('.item')
+
+// По клику устанавливаем/снимаем выделение, переключаем свойство draggable.
+.on('click', function(e) {
+   
+    $(this).toggleClass('selected');
+    $(this).toggleClass('select');
+    
+})
+
+    </script>
     </div>
         <footer>
           <div class="footer_wrapper">
