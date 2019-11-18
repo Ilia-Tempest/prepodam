@@ -4,8 +4,6 @@
    &_option
      position: relative
    &_select
-    width: 378px
-    height: 40px
     border-radius: 10px
     border: 1px #004EC2 solid
     font-family: Montserrat;
@@ -16,6 +14,17 @@
     letter-spacing: 0.06em;
     font-variant: small-caps;
     color: #004EC2
+     &::-webkit-input-placeholder 
+       font-family: Montserrat, Proxima Nova, Helvetica, sans-serif;
+       font-style: normal;
+       font-weight: normal;
+       font-size: 18px;
+       line-height: 27px;
+       display: flex;
+       align-items: center;
+       letter-spacing: 0.06em;
+       font-variant: small-caps;
+       color: #004EC2;
     &-img
       position: absolute
    &-text__main
@@ -49,9 +58,7 @@
      line-height: 44px;
      letter-spacing: 0.05em;
      font-variant: small-caps;
-     background: linear-gradient(173.5deg, #41F1FC -25.02%, #0F86F3 122.68%); 
-     -webkit-background-clip: text
-     -webkit-text-fill-color: transparent
+     color: #004EC2
      margin-bottom: 60px
    
   

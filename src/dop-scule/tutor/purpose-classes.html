@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru" prefix="og: http://ogp.me/ns#">
   <head>
-    <title>Date</title>
+    <title>Purpose classes</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="description" content="Page description">
@@ -28,14 +28,8 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous">
     </script>
-      <link rel="stylesheet" href="../../css/bootstrap-datepicker.css">
-      <script src="../../js/bootstrap-datepicker.js"></script>
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
-    <script src="jquery-ui-i18n.js"></script>
-    <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/sunny/jquery-ui.css">
-    <script src="../../js/date-student.js"></script>
-</head>
+      <script src="../../js/on-block.js"></script>
+  </head>
   <body>
     <div class="school__container">
           <header>
@@ -89,8 +83,8 @@
                     <a class="main__text-one" href="">Выбрать другую программу</a> 
                     <a class="" href="">Помощь</a>
                   </div>
-                    <span class="student__title">Студенческая<br>
-                      программа</span>
+                    <span class="student__title">Дополнительное<br>
+                      образование</span>
                   </div>
                   
                   <!-- /.main__block-text -->
@@ -105,17 +99,16 @@
                       </span> <!-- /.main__subtitle -->
                       <div class="main-auto">
                         <div class="main-auto__image">
-                          <img src="../../img/student-program/one.svg" alt="">
+                          <img src="../../img/dop-scule/three.svg" alt="">
                         </div>
                         <!-- /.main-auto__image -->
-                        <span class="main-text__student">Готовность 
+                        <span class="main-text__student dop-text__main">Готовность 
                            заказа
                         </span>
                         <!-- /.main-auto-text -->
                     </div>
                       <!-- /.main__auto -->
-
-                      <a class="main__pred" href="service.html">Предыдущий шаг</a>
+                      <a class="main__pred" href="../dop-scule.html">Предыдущий шаг</a>
                     </div>
                     
                     <!-- /.main__item -->
@@ -124,22 +117,40 @@
                           Студенческая программа
                         </div>
                       <h2 class="main__title-class">
-                          Сроки готовности
+                          Какая цель занятий?
                       </h2>
-                     
                       <!-- /.main__title -->
-                       <form action="" method="" >
-                       <div id="dpcontainer" class="ui-widget main__row">  
-                          <input placeholder="Написать конкретную дату" class="student__dop main__dop" id="datep"/>
-                      </div>
+                       <form action="" method="" class="main__form">
+                        <select id="test" name="test" class="main_select student__dop">
+                            <option selected disabled class="dop_option">
+                                Цель занятий:
+                            </option>
+                      <option class="dop_option">
+                          Повышение успеваемости
+                      </option>
+                      <option class="dop_option">
+                        Подготовка к экзаменам
+                      </option>
+                      <option class="dop_option">
+                        Подготовка к ГОСам
+                      </option>
+                      <option class="dop_option">
+                          Подготовка к олимпиаде
+                    </option>
+                    <option class="dop_option">
+                      Для работы
+                  </option>
+                   <option class="dop_option">
+                      Для себя
+                 </option>
+                          <!-- /.option -->
+                        </select>
+                        <!-- /# -->
                        </form>
-               
-                       <h3 class="main__title-class">Подсказка:</h3>
-                       <span class="main__text-right">
-                          Если точная дата не известна, укажите примерные число и месяц, раньше которых сдача работы не планируется.
-                       </span>
                        
-                       <a class="main__button" href="download.html">
+                       <h3 class="main__title-class">Или укажите свою цель</h3>
+                       <textarea class="main__textarea student__dop" placeholder = "Цель:"></textarea>
+                       <a class="main__button" href="number-classes.html">
                          Продолжить
                        </a>
                     </div>
@@ -155,7 +166,6 @@
         </div>
       </section>
     </div>
-   
         <footer>
           <div class="footer_wrapper">
             <div class="footer-soc"><a class="footer-logo_container" href=""><img src="../../img/icons/logo.svg" alt="alt"></a>
@@ -169,7 +179,7 @@
               <ul class="footer-nav footer-site-nav">
                 <li><a class="footer-nav__item footer-nav__item_title" href="../../aboutUs.html">Об Академии</a></li>
                 <li><a class="footer-nav__item" href="../../questionsAndAnswers.html">Вопрос-Ответ</a></li>
-                <li><a class="footer-nav__item" href="">Cоздать заказ</a></li>
+                <li><a class="footer-nav__item" href="../../variate.html">Cоздать заказ</a></li>
                 <li><a class="footer-nav__item" href="../../articles.html">Статьи</a></li>
                 <li><a class="footer-nav__item" href="../../courses.html">Онлайн-курсы</a></li>
               </ul>
@@ -197,6 +207,3 @@
         </footer>
   </body>
 </html>
-
-
-

@@ -228,6 +228,10 @@ input[class="main__r"]:checked + label::after {
   background: linear-gradient(174.2deg, #41F1FC -25.02%, #0F86F3 122.68%);
 }
 
+.select {
+  background: #FF4200;
+}
+
 /*Стили для шрифтов*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -8878,6 +8882,7 @@ h6 {
   margin-bottom: 20px;
   display: block;
   background: #fff;
+  border: none;
 }
 
 .info-block-content .info-block-subInfo .hidden_btn svg {
@@ -9823,7 +9828,12 @@ input [type=file] {
   margin-right: 4px;
 }
 
-.main__clock-button:last-child {
+.main__clock-student {
+  color: #FF4200;
+  border: #FF4200 1px solid;
+}
+
+.main__clock-student:last-child {
   margin-right: none;
 }
 
@@ -9929,7 +9939,6 @@ input [type=file] {
 }
 
 .main__title {
-  margin-top: 35px;
   font-family: Montserrat, Proxima Nova, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -10393,7 +10402,7 @@ input [type=file] {
 
 /*Стили для блока school-program*/
 .main-text__student {
-  font-family: Montserrat;
+  font-family: Montserrat, Proxima Nova, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
@@ -10403,11 +10412,15 @@ input [type=file] {
   color: #FF4200;
 }
 
+.main-text__bottom {
+  margin-bottom: 60px;
+}
+
 .student__title {
   display: inline-block;
   width: 566px;
   height: 79px;
-  font-family: Montserrat, serif;
+  font-family: Montserrat, Proxima Nova, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
@@ -10459,7 +10472,7 @@ input [type=file] {
   .student__titl {
     margin-top: 90px;
     display: block;
-    font-family: Montserrat;
+    font-family: Montserrat, Proxima Nova, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
@@ -10481,8 +10494,6 @@ input [type=file] {
 }
 
 .dop_select {
-  width: 378px;
-  height: 40px;
   border-radius: 10px;
   border: 1px #004EC2 solid;
   font-family: Montserrat;
@@ -10490,6 +10501,21 @@ input [type=file] {
   font-weight: normal;
   font-size: 18px;
   line-height: 27px;
+  letter-spacing: 0.06em;
+  font-variant: small-caps;
+  color: #004EC2;
+}
+
+.dop_select::-webkit-input-placeholder {
+  font-family: Montserrat, Proxima Nova, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
   letter-spacing: 0.06em;
   font-variant: small-caps;
   color: #004EC2;
@@ -10532,9 +10558,7 @@ input [type=file] {
     line-height: 44px;
     letter-spacing: 0.05em;
     font-variant: small-caps;
-    background: linear-gradient(173.5deg, #41F1FC -25.02%, #0F86F3 122.68%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #004EC2;
     margin-bottom: 60px;
   }
 }
