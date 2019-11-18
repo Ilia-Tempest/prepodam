@@ -117,6 +117,23 @@ input[class="main__r"]:checked + label::after {
   -ms-transform: rotate(-45deg);
   transform: rotate(-55deg);
 }
+input[class="main__ra"]:checked + label::after {
+  content: '';
+  position: absolute;
+  width: 2.1ex;
+  height: 0.9ex;
+  background: rgba(0, 0, 0, 0);
+  top: 0.1ex;
+  left: 0.3ex;
+  border: 4px solid #004EC2;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-55deg);
+}
 
 
 
@@ -198,5 +215,8 @@ input[class="main__r"]:checked + label::after {
 .select {
   background: #FF4200;
 }
-
+.select-dop {
+  background: #004EC2;
+  color: red;
+}
 

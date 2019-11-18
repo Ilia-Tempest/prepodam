@@ -1,6 +1,8 @@
 .dop
    &_titl
      display: none
+   &__tit
+     display: none
    &_option
      position: relative
    &_select
@@ -14,7 +16,7 @@
     letter-spacing: 0.06em;
     font-variant: small-caps;
     color: #004EC2
-     &::-webkit-input-placeholder 
+    &::-webkit-input-placeholder 
        font-family: Montserrat, Proxima Nova, Helvetica, sans-serif;
        font-style: normal;
        font-weight: normal;
@@ -24,7 +26,8 @@
        align-items: center;
        letter-spacing: 0.06em;
        font-variant: small-caps;
-       color: #004EC2;
+       color: #004EC2
+       opacity: 1
     &-img
       position: absolute
    &-text__main
@@ -48,18 +51,32 @@
  .dop
    &_title
      display: none
-   &_titl
+   &__tit
+     color: #004EC2
      margin-top: 90px
      display: block
-     font-family: Montserrat;
-     font-style: normal;
+     font-family: Montserrat
+     font-style: normal
      font-weight: 600;
      font-size: 36px;
      line-height: 44px;
      letter-spacing: 0.05em;
-     font-variant: small-caps;
-     color: #004EC2
+     font-variant: small-caps
      margin-bottom: 60px
+   &_titl
+     margin-top: 90px
+     display: block
+     font-family: Montserrat
+     font-style: normal
+     font-weight: 600;
+     font-size: 36px;
+     line-height: 44px;
+     letter-spacing: 0.05em;
+     font-variant: small-caps
+     margin-bottom: 60px
+     background: linear-gradient(165.12deg, #41F1FC -25.02%, #0F86F3 122.68%);
+     -webkit-background-clip: text
+     -webkit-text-fill-color: transparent
    
   
   
