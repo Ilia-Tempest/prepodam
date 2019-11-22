@@ -81,7 +81,7 @@
                 <section class="main wrapper">
                   <div class="main__block-text">
                     <div class="main__text-top">
-                    <a class="main__text-one" href="">Выбрать другую программу</a> 
+                    <a class="main__text-one" href="../../variate.html">Выбрать другую программу</a> 
                     <a class="" href="">Помощь</a>
                   </div>
                     <span class="school_title">Школьная<br>
@@ -92,7 +92,7 @@
                   <div class="main__block">
                     <div class="main__item main__item-left">
                       <h1 class="main__title">
-                          Проподаватели(автоподсчёт)
+                          Преподаватели(автоподсчёт)
                       </h1>
                       <!-- /.main__title -->
                       <span class="main__subtitle">
@@ -101,7 +101,15 @@
                       
                       <div class="main-auto">
                           <div class="main-auto__image">
-                            <img src="../../img/school-program/one.svg" alt="">
+                              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="gits">
+                              
+                                <circle cx="50" cy="50" r="34">
+                                  <animateTransform attributeName="transform"
+                                    attributeType="XML" type="rotate" from="0 50 50"
+                                        to="80 50 50" dur="7s" repeatCount="indefinite" />
+                                </circle>
+                                <text x="49" y="54">0</text>><text x="62" y="54">%</text>
+                              </svg>
                           </div>
                           <!-- /.main-auto__image -->
                           <span class="main-text__student main-auto__text">Готовность 
@@ -123,6 +131,7 @@
                       </h2>
                       <!-- /.main__title -->
                       <form action="" method="" class="main__form">
+                        <div class="selec">
                         <select  id="test" name="test" class="main_select main_select-one" >
                             <option disabled selected class="dop_option">
                                Тип работы:
@@ -146,6 +155,7 @@
                       Другое
                   </option>
                         </select>
+                      </div>
                       </form>
                        <h3 class="main__title-class">Подсказка:</h3>
                        <div id="container">
@@ -199,7 +209,7 @@
               <ul class="footer-nav footer-site-nav">
                 <li><a class="footer-nav__item footer-nav__item_title" href="../../aboutUs.html">Об Академии</a></li>
                 <li><a class="footer-nav__item" href="../../questionsAndAnswers.html">Вопрос-Ответ</a></li>
-                <li><a class="footer-nav__item" href="">Cоздать заказ</a></li>
+                <li><a class="footer-nav__item" href="../../variate.html">Cоздать заказ</a></li>
                 <li><a class="footer-nav__item" href="../../articles.html">Статьи</a></li>
                 <li><a class="footer-nav__item" href="../../courses.html">Онлайн-курсы</a></li>
               </ul>
@@ -225,7 +235,37 @@
             </div>
           </div>
         </footer>
-      
+        <script>
+          	function getRandomInRange(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+var circles = document.querySelectorAll("#gits circle"),
+progress = document.getElementsByTagName("text")[0];
+
+for (var j = 0; j < circles.length; ++j) {
+  var radius = parseInt(circles[j].getAttribute('r'), 10);
+circles[j].circumference = 2 * radius * Math.PI;
+  circles[j].init = getRandomInRange(20,80);
+  circles[j].style.strokeDasharray = circles[j].init + " " + circles[j].circumference;
+}
+
+var i = 10;
+var timer = setInterval(function() { 
+  progress.textContent = i;
+  if (i == 20) {
+  clearInterval(timer);
+} else {
+  i++;  
+  for (var j = 0; j < circles.length; ++j) {
+       circles[j].style.strokeDasharray = circles[j].init + i + " " + circles[j].circumference;
+  }
+  
+}}, 500)
+
+
+
+        </script>
         
   </body>
 </html>
