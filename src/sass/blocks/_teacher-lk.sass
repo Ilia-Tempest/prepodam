@@ -1,0 +1,420 @@
+.ui-state-highlight, .ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight,
+.ui-state-highlight, .ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover
+
+  background: rgba(33, 172, 246, 0.3) !important
+  border: none !important
+  color: #454545 !important
+
+
+input[type='radio']:checked + label.personal-item__social
+	background: rgba(33, 172, 246, 0.3)
+input[type='radio'] + label.personal-item__social::before
+	display: none
+input[type='radio'] + label.personal-item__social::after
+	display: none
+.personal	
+	display: flex
+	padding-top: 70px
+	padding-bottom: 70px
+
+	.left-sidebar
+		margin-top: 0
+	&-mainblock
+		flex: 1
+		.left-sidebar__filling
+			display: none
+		&__user
+			margin-bottom: 35px
+	&-block
+		&__chut
+			border-top: 0
+			padding-top: 0
+	&-mnu 
+		display: flex
+		margin-bottom: 50px
+		font-size: 18px
+		font-weight: 600
+		justify-content: space-around
+		&__link
+			+grad
+			border-bottom: 1px solid #fff
+			&.current
+				color: #ff4200
+				-webkit-text-fill-color: #ff4200
+				border-bottom: 1px solid #ff4200
+			&:hover,
+			&:active
+				color: #ff4200
+				-webkit-text-fill-color: #ff4200
+				border-bottom: 1px solid #ff4200
+				transition: 0.6s
+	&-user 
+		display: flex
+		margin-bottom: 35px
+		&__img
+			width: 150px
+			height: 150px
+			border-radius: 50%
+			margin-right: 35px
+		&__item
+			margin-bottom: 8px
+		&__data 
+			font-size: 18px
+			font-weight: 600
+		&__link
+			font-weight: 400
+			+grad 
+		&__span 
+			font-weight: 400
+			margin-left: 20px
+		&__warning 
+			color: #ff2020 
+		&__label 
+			font-size: 14px
+			font-weight: 400
+			+grad
+			display: block
+			margin-top: -3px
+		&__reviews
+			color: #000
+	&-item 
+		display: flex
+		padding: 35px 35px 35px 0 
+		border-top: 1px solid rgba(0,0,0,.3)
+		&_col 
+			flex-direction: column
+		&_first 
+			border-top: none
+			padding-top: 0
+		&__tab
+			display: flex
+			padding-right: 35px
+			margin-bottom: 35px
+		&__name 
+			font-size: 18px
+			font-weight: 600
+			flex-basis: 20%
+			line-height: 1.6
+		&__data 
+			font-size: 16px
+			flex-basis: 80%
+		&__link
+			color: #ff4200
+			border: none
+			padding: 0
+			&_del 
+				margin-top: 25px
+		&__descr
+			margin-top: 30px
+			&_t 
+				margin-top: 0
+			.personal-item__name
+				margin-bottom: 25px
+		&__label
+			color: #ff4200
+			margin-top: 25px
+			display: block
+		&__span 
+			+grad
+			&_price 
+				margin-left: 35px
+			&_city 
+				display: block
+				margin-top: 20px
+		&__inputs,
+		&__clone
+			display: flex
+			flex-direction: column
+		&__input 
+			width: 297px
+			background: none
+		&__button 
+			margin-left: 0
+			margin-top: 0
+			font-size: 16px
+			font-weight: 600
+			letter-spacing: normal
+		&__docs 
+			display: flex 
+			margin-bottom: 35px
+		&__doc 
+			margin-right: 30px
+			position: relative
+
+			&_bg 
+				position: absolute 
+				bottom: 0
+				top: 0
+				left: 0
+				right: 0
+				background-color: rgba(0,0,0,.4)
+				display: flex
+				justify-content: center
+				opacity: 0
+				transition: 0.6s
+			&:hover 
+				.personal-item__doc_bg 
+					opacity: 1
+		&__result
+			color: #219653
+			font-weight: 600
+			margin-bottom: 30px
+			margin-top: 30px
+		&__social 
+			+grad 
+			font-size: 20px
+			border: 2px solid #21ACF6 
+			border-radius: 50%
+			width: 40px
+			height: 40px
+			display: flex
+			justify-content: center
+			align-items: center
+			float: left 
+			margin-right: 35px
+		&__pays 
+			width: 188px
+			height: 40px
+			border-radius: 10px
+			background-color: #f2f2f2
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-bottom: 20px
+			&:last-child 
+				margin-bottom: 0
+		&__notifi
+			position: relative
+			padding-left: 35px
+			&::before
+				content: ''
+				width: 20px
+				height: 15px
+				border: 4px solid #ff4200
+				border-top: none
+				border-right: none
+				transform: rotate(-55deg)
+				display: block
+				position: absolute
+				top: -4px
+		&__info 
+			margin-top: 35px
+			color: #898989
+			font-weight: 400
+			display: flex
+			align-items: center
+		&__point 
+			width: 4px
+			height: 4px
+			background-color: #898989
+			border-radius: 50%
+			margin-right: 5px
+		&__edit
+			display: none
+		&__city-wrap
+			display: none
+.page__title
+	font-size: 36px
+	font-weight: 800
+	color: #ff4200	
+	margin-bottom: 50px
+	text-align: center
+.reviews
+	&-block 
+		flex: 1
+	&__item 
+		display: flex 
+		align-items: flex-start
+		font-size: 18px
+		line-height: 1.6
+		position: relative
+		margin-right: 50px
+		margin-bottom: 60px
+	&__img 
+		width: 140px
+		height: 140px
+		margin-right: 35px
+		border-radius: 50%
+	&__info 
+		margin-top: 10px
+	&__name 
+		font-weight: 600
+	&__subj 
+		font-weight: 600
+		margin-top: 10px
+		margin-bottom: 15px
+	&__count 
+		+grad 
+		margin-left: 10px
+	&__date 
+		font-weight: 400
+		+grad 
+		position: absolute
+		top: 0
+		right: 0
+	&__button 
+		width: 297px
+		border: none
+		font-size: 16px
+		font-weight: 600
+		margin-left: auto
+		margin-right: auto
+		background-color: #ff4200
+
+
+.rewards,
+.educate
+	width: 548px
+	border-radius: 10px 
+	margin: auto
+	background-color: #fff
+	padding: 60px
+	position: relative
+	&__title
+		font-size: 20px
+		font-weight: 600
+		margin-bottom: 30px
+	&__textarea 
+		border: 1px solid rgba(0,0,0,.4)
+		border-radius: 10px
+		width: 100%
+	.main__button
+		width: 100%
+		border: none
+		margin-top: 30px
+		margin-left: 0
+		font-size: 18px 
+		font-weight: 600
+		letter-spacing: normal 
+.docs 
+	width: 200px
+	margin-left: 30px
+	&__mnu 
+		display: flex
+		flex-direction: column
+	&__link
+		color: #333
+		font-size: 14px
+		font-weight: 600
+		padding: 15px 10px
+		margin-bottom: 15px	
+		transition: 0.6s
+		&:hover,
+		&:active,
+		&.current
+			background-color: rgba(33, 172, 246, 0.3)
+.page-item 
+	font-size: 18px
+	margin-bottom: 50px
+	&__qwestion
+		font-weight: 600
+		color: #333 
+		margin-bottom: 35px
+	&__answer 
+		font-weight: 300
+		color: #000
+.create-order
+	width: 445px
+	font-size: 16px
+	font-weight: 600
+	letter-spacing: normal
+	margin-top: 0
+	margin-bottom: 60px
+	margin-left: auto
+	margin-right: auto
+
+@media (max-width: 1200px)
+	.personal
+		padding-top: 70px
+		padding-bottom: 70px
+		&-item
+			&__name
+				flex-basis: 25%
+			&__data
+				flex-basis: 75%
+@media (max-width: 970px)
+	.personal
+		flex-direction: column
+		align-items: center
+		&-item
+			&__button 
+				width: 297px
+				margin: auto
+@media (max-width: 800px)
+	.personal
+		&-mainblock
+			margin-bottom: 30px
+			.left-sidebar__filling
+				display: block
+				width: 188px
+				margin-left: auto
+				margin-right: auto
+				margin-bottom: 40px
+
+		&-mnu 
+			flex-direction: column
+			align-items: center
+			margin-bottom: 25px
+			&__link
+				margin-bottom: 25px
+		&-user 
+			width: 300px
+			flex-direction: column
+			align-items: center
+			margin: auto
+			margin-bottom: 40px
+			&__img 
+				margin-right: 0
+				margin-bottom: 30px
+			&__data
+				text-align: center
+			&__wrap 
+				text-align: center
+		&-item 
+			flex-direction: column
+			align-items: center
+			max-width: 330px
+			margin: auto
+			padding-right: 0
+			&__name
+				margin-bottom: 35px 
+				text-align: center
+			&__data 
+				text-align: center
+			.registr-form__mainlabel
+				text-align: left
+			&__docs
+				flex-direction: column
+			&__doc 
+				margin-right: 0
+				margin-bottom: 15px
+			&__result
+				margin-top: 0
+			&__tab 
+				flex-direction: column
+				padding-right: 0
+	.rewards,
+	.educate
+		width: 300px
+		padding: 30px 20px
+		.main__button
+			font-size: 14px
+	
+	.docs
+		margin-left: 0
+		&__mnu
+			text-align: center
+		&__link 
+			margin-bottom: 10px
+	.page-item
+		width: 330px
+		&__qwestion
+			text-align: center
+	.create-order
+		width: 297px
+
+
+			
+		

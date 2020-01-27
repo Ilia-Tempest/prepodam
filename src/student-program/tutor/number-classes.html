@@ -21,14 +21,7 @@
         <meta property="og:description" content="">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="manifest" href="../../manifest.json">
-    <script defer src="../../js/libs.min.js"></script>
-    <script defer src="../../js/common.min.js"></script>
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous">
-    </script>
-      <script src="../../js/on-block.js"></script>
+   
   </head>
   <body>
     <div class="school__container">
@@ -53,8 +46,8 @@
                   <button class="allBtn teachersBtn">Преподавателям
                     <div class="headerBtn-content_wrapper">
                       <ul class="students-conteiner">
-                        <li><a class="students-item log" href="">Вход</a></li>
-                        <li> <a class="students-item reg" href="">Регистрация</a></li>
+                        <li><a class="students-item log" href="../../teacher-account/password.html">Вход</a></li>
+                        <li> <a class="students-item reg" href="../../registr-teacher/page-start.html">Регистрация</a></li>
                       </ul>
                       <div class="icon-arrow-top"><span class="icon"></span></div>
                     </div>
@@ -62,8 +55,8 @@
                   <button class="allBtn studentsBtn">Обучающимся
                     <div class="headerBtn-content_wrapper">
                       <ul class="students-conteiner">
-                        <li><a class="students-item log" href="">Вход</a></li>
-                        <li> <a class="students-item reg" href="">Регистрация</a></li>
+                        <li><a class="students-item log" href="../../student-account/password.html">Вход</a></li>
+                        <li> <a class="students-item reg" href="../../registr-student/student-registr.html">Регистрация</a></li>
                       </ul>
                       <div class="icon-arrow-top"><span class="icon"></span></div>
                     </div>
@@ -80,7 +73,7 @@
                 <section class="main wrapper">
                   <div class="main__block-text">
                     <div class="main__text-top">
-                    <a class="main__text-one" href="../../variate.html">Выбрать другую программу</a> 
+                    <a class="main__text-one" href="../../variate.html" id="index">Выбрать другую программу</a> 
                     <a class="" href="">Помощь</a>
                   </div>
                     <span class="student__title">Студенческая<br>
@@ -91,23 +84,30 @@
                   <div class="main__block">
                     <div class="main__item main__item-left">
                       <h1 class="main__title">
-                          Преподаватели(автоподсчёт)
-                      </h1>
+                        Преподаватели: 
+                      </h1> <span class="main__text-number main__text-orange"> 199</span>
                       <!-- /.main__title -->
                       <span class="main__subtitle">
                           Пожалуйста, ответьте на все вопросы, чтобы сформировать заказ и получить предложения от преподавателей
                       </span> <!-- /.main__subtitle -->
                 <div class="main-auto">
                           <div class="main-auto__image">
-                              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="git">
-                              
-                                <circle cx="50" cy="50" r="34">
-                                  <animateTransform attributeName="transform"
-                                    attributeType="XML" type="rotate" from="0 50 50"
-                                        to="80 50 50" dur="7s" repeatCount="indefinite" />
-                                </circle>
-                                <text x="49" y="54">0</text>><text x="63" y="54">%</text>
+                            <div class="container-2">
+                              <svg height="177" width="178" viewBox="0 0 200 200">
+                                <defs>
+                                  <mask id="msk1" >
+                                  <rect fill="white" width="100%" height="100%" />	   
+                                   <rect fill="red" x="0" y="0" width="200" height="200" >
+                                     <animate attributeName="y" dur="5s" begin="0s" values="-48; -60" fill="freeze" />
+                                  </rect>	
+                                 </mask> 
+                                </defs>
+                                <circle id="crc2"  cx="100" cy="100" r="90" />
+                                <text class="counter text-school-1" x="90" y="100">0</text>><text class="text-school-1" x="125" y="100">%</text>
+                                
                               </svg>
+                              
+                              </div>
                           </div>
                           <!-- /.main-auto__image -->
                           <span class="main-text__student main-text__bottom">Готовность 
@@ -116,7 +116,7 @@
                           <!-- /.main-auto-text -->
                       </div>
                       <!-- /.main__auto -->
-                      <a class="main__pred" href="purpose-classes.html">Предыдущий шаг</a>
+                      <a class="main__pred" href="purpose-classes.html#index">Предыдущий шаг</a>
                     </div>
                     
                     <!-- /.main__item -->
@@ -124,12 +124,13 @@
                         <div class="student__titl">
                           Студенческая программа
                         </div>
+                    <form action="convenient-do.html#index" method="" class="main__form">
                       <h2 class="main__title-class">
                           Укажите примерное кол-во занятий
                       </h2>
                       <!-- /.main__title -->
-                       <div class="selecci">
-                        <select id="test" name="test" class="main_top main_select student__dop">
+                       <div class="seleci">
+                        <select id="test" name="test" class="main_select student__dop" required="">
                             <option selected disabled class="dop_option">
                                 Количество занятий:
                            </option>
@@ -152,18 +153,12 @@
                         </select>
                       </div>
                         <!-- /# -->
-                        <form action="" method="" class="main__form">
+                        
                         <textarea placeholder="Комментарий" type="text" class="main__dop main__comment student__dop"></textarea>
-                       </form>
+                      <input type="submit" class="main__button" value="Продолжить">
+                </form>
                      
-                       <h3 class="main__title-class">Подсказка:</h3>
-                       <div class="main__text-right">
-                          Научный руководитель - это  уникального торгового предложения или же описание названия того или иного продукта, который в первом экране.Описание уникального торгового предложения ил и же описание названия того 
-                      </div>
-                       
-                       <a class="main__button" href="convenient-do.html">
-                         Продолжить
-                       </a>
+                
                     </div>
                     <!-- /.main__item -->
                   </div>
@@ -195,7 +190,8 @@
                 <li><a class="footer-nav__item" href="../../courses.html">Онлайн-курсы</a></li>
               </ul>
               <ul class="footer-nav footer-persone-nav">
-                <li><a class="footer-nav__item" href="">Вход для преподавателей</a></li>
+                <li><a class="footer-nav__item" href="../../student-account/password.html">Вход для учеников</a></li>
+                <li><a class="footer-nav__item" href="../../teacher-account/password.html">Вход для преподавателей</a></li>
                 <li><a class="footer-nav__item" href="../../vacancy.html">Вакансии</a></li>
                 <li><a class="footer-nav__item" href="../../siteRules.html">Правила сайта</a></li>
                 <li><a class="footer-nav__item" href="">Карта сайта</a></li>
@@ -216,6 +212,12 @@
             </div>
           </div>
         </footer>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+       
+        <script defer src="../../js/libs.min.js"></script>
+        <script defer src="../../js/common.min.js"></script>
+        
+        <script src="../../js/on-block.js"></script>
         <script>
             function getRandomInRange(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;

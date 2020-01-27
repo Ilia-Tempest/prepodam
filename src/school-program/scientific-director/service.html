@@ -21,8 +21,7 @@
         <meta property="og:description" content="">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="manifest" href="../../manifest.json">
-    <script defer src="../../js/libs.min.js"></script>
-    <script defer src="../../js/common.min.js"></script>
+   
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -53,8 +52,8 @@
                   <button class="allBtn teachersBtn">Преподавателям
                     <div class="headerBtn-content_wrapper">
                       <ul class="students-conteiner">
-                        <li><a class="students-item log" href="">Вход</a></li>
-                        <li> <a class="students-item reg" href="">Регистрация</a></li>
+                        <li><a class="students-item log" href="../../teacher-account/password.html">Вход</a></li>
+                        <li> <a class="students-item reg" href="../../registr-teacher/page-start.html">Регистрация</a></li>
                       </ul>
                       <div class="icon-arrow-top"><span class="icon"></span></div>
                     </div>
@@ -62,8 +61,8 @@
                   <button class="allBtn studentsBtn">Обучающимся
                     <div class="headerBtn-content_wrapper">
                       <ul class="students-conteiner">
-                        <li><a class="students-item log" href="">Вход</a></li>
-                        <li> <a class="students-item reg" href="">Регистрация</a></li>
+                        <li><a class="students-item log" href="../../student-account/password.html">Вход</a></li>
+                        <li> <a class="students-item reg" href="../../registr-student/student-registr.html">Регистрация</a></li>
                       </ul>
                       <div class="icon-arrow-top"><span class="icon"></span></div>
                     </div>
@@ -80,7 +79,7 @@
                 <section class="main wrapper">
                   <div class="main__block-text">
                     <div class="main__text-top">
-                    <a class="main__text-one" href="../../variate.html">Выбрать другую программу</a> 
+                    <a class="main__text-one" href="../../variate.html" id="index">Выбрать другую программу</a> 
                     <a class="" href="">Помощь</a>
                   </div>
                     <span class="school_title">Школьная<br>
@@ -91,7 +90,7 @@
                   <div class="main__block">
                     <div class="main__item main__item-left">
                       <h1 class="main__title">
-                          Преподаватели(автоподсчёт)
+                        Преподаватели: <span class="main__text-top main__text-number">199</span>
                       </h1>
                       <!-- /.main__title -->
                       <span class="main__subtitle">
@@ -99,15 +98,22 @@
                       </span> <!-- /.main__subtitle -->
                       <div class="main-auto">
                           <div class="main-auto__image">
-                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="gits">
+                            <div class="container-1">
+                              <svg height="177" width="178" viewBox="0 0 200 200">
+                                <defs>
+                                  <mask id="msk1" >
+                                  <rect fill="white" width="100%" height="100%" />	   
+                                   <rect fill="red" x="0" y="0" width="200" height="200" >
+                                     <animate attributeName="y" dur="5s" begin="0s" values="-120; -140" fill="freeze" />
+                                  </rect>	
+                                 </mask> 
+                                </defs>
+                                <circle id="crc1"  cx="100" cy="100" r="90" />
+                                <text class="counter text-school" x="90" y="100">10</text>><text class="text-school" x="125" y="100">%</text>
+                                
+                              </svg>
                               
-                              <circle cx="50" cy="50" r="34">
-                                <animateTransform attributeName="transform"
-                                  attributeType="XML" type="rotate" from="0 50 50"
-                                      to="80 50 50" dur="7s" repeatCount="indefinite" />
-                              </circle>
-                              <text x="49" y="54">0</text>><text x="62" y="54">%</text>
-                            </svg>
+                              </div>
                           </div>
                           <!-- /.main-auto__image -->
                           <span class="main-text__student main-auto__text">Готовность 
@@ -116,7 +122,7 @@
                           <!-- /.main-auto-text -->
                       </div>
                       <!-- /.main__auto -->
-                      <a class="main__pred" href="percent.html">Предыдущий шаг</a>
+                      <a class="main__pred" href="percent.html#index">Предыдущий шаг</a>
                     </div>
                     
                     <!-- /.main__item -->
@@ -124,12 +130,13 @@
                         <div class="dop_titl">
                           Школьная программа
                         </div>
-                      <h2 class="main__title-class">
+                      
+                      <!-- /.main__title -->
+                       <form action="date.html#index" method="" class="main__form">
+                       <h2 class="main__title-class">
                           В каком сервисе будут проверять работу 
                           на плагиат?
                       </h2>
-                      <!-- /.main__title -->
-                       <form action="" method="" class="main__form">
                          <div class="selec">
                         <select id="test" name="test" class="main_select">
                       <option class="dop_option">
@@ -157,24 +164,16 @@
                         </select>
                       </div>
                         <!-- /# -->
-                       </form>
+                       
                        <div id="container">
                           <div id="a6_54" class="main__text-right main__text-dop">
-                             <form action="" method="">
-                               <input class="main__dop" type="text" placeholder="Введите ваш вариант:">
-                             </form>
+                            
+                               <input class="main__dop" type="text" placeholder="Введите ваш вариант:" name="fname" id="fname">
+                            
                           </div>
                          </div>
-                       <h3 class="main__title-class">Подсказка:</h3>
-                       <div class="main__text-right">
-                          Научный руководитель - это  уникального торгового предложения или же описание названия того или иного продукта, который в первом экране.Описание уникального торгового предложения ил и же описание названия того 
-                          <br><br>
-                         Репетитор - этоили иного продукта, который в первом экране. писание названия того или иного продукта, который в первом экране. 
-                      </div>
-                       
-                       <a class="main__button" href="date.html">
-                         Продолжить
-                       </a>
+                      <input type="submit" class="main__button" value="Продолжить">
+                     </form>
                     </div>
                     <!-- /.main__item -->
                   </div>
@@ -206,7 +205,8 @@
                 <li><a class="footer-nav__item" href="../../courses.html">Онлайн-курсы</a></li>
               </ul>
               <ul class="footer-nav footer-persone-nav">
-                <li><a class="footer-nav__item" href="">Вход для преподавателей</a></li>
+                <li><a class="footer-nav__item" href="../../student-account/password.html">Вход для учеников</a></li>
+                <li><a class="footer-nav__item" href="../../teacher-account/password.html">Вход для преподавателей</a></li>
                 <li><a class="footer-nav__item" href="../../vacancy.html">Вакансии</a></li>
                 <li><a class="footer-nav__item" href="../../siteRules.html">Правила сайта</a></li>
                 <li><a class="footer-nav__item" href="">Карта сайта</a></li>
@@ -227,6 +227,12 @@
             </div>
           </div>
         </footer>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+         <script defer src="../../js/libs.min.js"></script>
+        <script defer src="../../js/common.min.js"></script>
+        <script src="../../js/on-block.js"></script>
+        <script defer src="../../js/validate.js"></script>
         <script>
           function getRandomInRange(min, max) {
 return Math.floor(Math.random() * (max - min + 1)) + min;

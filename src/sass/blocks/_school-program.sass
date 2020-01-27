@@ -1,3 +1,23 @@
+.error 
+  color: #ff4200
+.main__text-orange
+  color: #ff4200
+  font-family: Montserrat, Proxima Nova, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  font-variant: small-caps;
+.main__text-blue
+  color: #004EC2
+  font-family: Montserrat, Proxima Nova, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  font-variant: small-caps;
 #dpcontainer img 
   width: 40px
   margin-left: 10px
@@ -62,7 +82,6 @@ input [type=file]
       font-variant: small-caps;
       margin-right: 4px
     &-dop
-      color: #004EC2
       border: 1px solid #004ec2
     &-student
       border: #FF4200 1px solid 
@@ -109,6 +128,7 @@ input [type=file]
     font-variant: small-caps;
     color: rgb(57, 188, 197); 
     -webkit-background-clip: text
+    display: block
     &-one 
       
   &__text-top
@@ -144,12 +164,24 @@ input [type=file]
     background: #333333
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
+    display: inline-block
     &-clock
       margin-bottom: 35px
     &-two
       margin-top: 0
     &:first-child
       margin-top: 0
+  &__title-none
+    font-family: Montserrat,serif
+    font-style: normal
+    font-weight: 800
+    font-size: 20px
+    line-height: 27px
+    letter-spacing: 0.05em
+    font-variant: small-caps
+    background: #333333
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
   &__title-class
     font-family: Montserrat,serif
     font-style: normal
@@ -161,6 +193,9 @@ input [type=file]
     background: #333333
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
+    margin-top: 35px
+    &:first-child 
+      margin-top: 0
   &__title-thanks
     font-size: 25px
   &__subtitle
@@ -180,12 +215,19 @@ input [type=file]
     margin-top: 30px
     margin-bottom: 80px
     &-final
-      margin-bottom: 0
+      margin-bottom: 30px
+      display: inline-block
+      margin-top: 30px
   &__dop
     border-radius: 10px;
     border: 1px solid rgb(57, 188, 197); 
     width: 378px
     height: 40px
+    margin-top: 35px
+    &_t 
+      margin-top: 0
+    &_b 
+      margin-bottom: 35px
     &-one
       width: 40px
       margin-left: 10px
@@ -254,9 +296,10 @@ input [type=file]
     width: 621px
   &__item-thanks
     padding-bottom: 80px
-    border: none
+  &__download
+    display: flex
+    flex-direction: column
   &__form
-    margin-top: 35px
     margin-bottom: 35px
     display: flex
     flex-direction: column
@@ -271,7 +314,7 @@ input [type=file]
       margin-top: 35px
     &:first-child
       margin-bottom: 0
-      margin-top: 0
+     
   &__label
     font-family: Montserrat, Proxima Nova, Helvetica, sans-serif;
     font-style: normal;
@@ -281,6 +324,11 @@ input [type=file]
     letter-spacing: 0.05em;
     font-variant: small-caps;
     color: #000000;
+    padding: 0 5px 
+    border-radius: 10px
+    &.not-checked 
+      background-color: rgba(#ff4200, .15)
+      
   &__text-right
     font-family: Montserrat, Proxima Nova, Helvetica, sans-serif;
     font-style: normal;
@@ -318,6 +366,8 @@ input [type=file]
       margin-left: 0
   &__text-one
      margin-bottom: 25px
+  &__text-number
+    display: inline-block
      
 @media (max-width: 1150px)
   .school_title
@@ -434,9 +484,13 @@ input [type=file]
       width: 328px
       height: 112px
  
+.form__select 
+  margin-top: 35px
+.seleci,
+.selec,
+.selett
+  margin-top: 35px 
 
-
-     
    
 
          

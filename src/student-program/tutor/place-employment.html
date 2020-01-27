@@ -49,8 +49,8 @@
                   <button class="allBtn teachersBtn">Преподавателям
                     <div class="headerBtn-content_wrapper">
                       <ul class="students-conteiner">
-                        <li><a class="students-item log" href="">Вход</a></li>
-                        <li> <a class="students-item reg" href="">Регистрация</a></li>
+                        <li><a class="students-item log" href="../../teacher-account/password.html">Вход</a></li>
+                        <li> <a class="students-item reg" href="../../registr-teacher/page-start.html">Регистрация</a></li>
                       </ul>
                       <div class="icon-arrow-top"><span class="icon"></span></div>
                     </div>
@@ -58,8 +58,8 @@
                   <button class="allBtn studentsBtn">Обучающимся
                     <div class="headerBtn-content_wrapper">
                       <ul class="students-conteiner">
-                        <li><a class="students-item log" href="">Вход</a></li>
-                        <li> <a class="students-item reg" href="">Регистрация</a></li>
+                        <li><a class="students-item log" href="../../student-account/password.html">Вход</a></li>
+                        <li> <a class="students-item reg" href="../../registr-student/student-registr.html">Регистрация</a></li>
                       </ul>
                       <div class="icon-arrow-top"><span class="icon"></span></div>
                     </div>
@@ -76,7 +76,7 @@
                 <section class="main wrapper">
                   <div class="main__block-text">
                       <div class="main__text-top">
-                      <a class="main__text-one" href="../../variate.html">Выбрать другую программу</a> 
+                      <a class="main__text-one" href="../../variate.html" id="index">Выбрать другую программу</a> 
                       <a class="" href="">Помощь</a>
                     </div>
                     <span class="student__title">Студенческая<br>
@@ -86,23 +86,30 @@
                   <div class="main__block">
                     <div class="main__item main__item-left">
                       <h1 class="main__title">
-                          Преподаватели(автоподсчёт)
-                      </h1>
+                        Преподаватели: 
+                      </h1> <span class="main__text-number main__text-orange"> 199</span>
                       <!-- /.main__title -->
                       <span class="main__subtitle">
                           Пожалуйста, ответьте на все вопросы, чтобы сформировать заказ и получить предложения от преподавателей
                       </span> <!-- /.main__subtitle -->
                       <div class="main-auto">
                         <div class="main-auto__image">
-                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="git">
+                          <div class="container-2">
+                            <svg height="177" width="178" viewBox="0 0 200 200">
+                              <defs>
+                                <mask id="msk1" >
+                                <rect fill="white" width="100%" height="100%" />	   
+                                 <rect fill="red" x="0" y="0" width="200" height="200" >
+                                   <animate attributeName="y" dur="5s" begin="0s" values="-76; -92" fill="freeze" />
+                                </rect>	
+                               </mask> 
+                              </defs>
+                              <circle id="crc2"  cx="100" cy="100" r="90" />
+                              <text class="counter text-school-1" x="90" y="100">0</text>><text class="text-school-1" x="125" y="100">%</text>
                               
-                              <circle cx="50" cy="50" r="34">
-                                <animateTransform attributeName="transform"
-                                  attributeType="XML" type="rotate" from="0 50 50"
-                                      to="80 50 50" dur="7s" repeatCount="indefinite" />
-                              </circle>
-                              <text x="49" y="54">0</text>><text x="63" y="54">%</text>
                             </svg>
+                            
+                            </div>
                         </div>
                         <!-- /.main-auto__image -->
                         <span class="main-text__student">Готовность 
@@ -111,7 +118,7 @@
                         <!-- /.main-auto-text -->
                     </div>
                       <!-- /.main__auto -->
-                      <a class="main__pred" href="convenient-do.html">Предыдущий шаг</a>
+                      <a class="main__pred" href="convenient-do.html#index">Предыдущий шаг</a>
                     </div>
                     <!-- /.main__item -->
                     <div class="main__item main__item-right">
@@ -125,13 +132,12 @@
                       <!-- /.main__title -->
                        <form action="" method="" class="main__form" id="radios">
                          <div class="main__input">
-                        <input required 
-                        class="main__r" type="checkbox" name="field" id="checkbox" 
-                        ><label  class="main__label" for="checkbox">У меня</label>
+                        <input value="maps.html#index"  class="main__r" type="checkbox" name="field" id="checkbox" 
+                        onclick="foo(this)"><label  class="main__label" for="checkbox">У меня</label>
                       </div>
                       <div class="main__input">
-                        <input required class="main__r" 
-                        type="checkbox" id="checkbox-two" name="field" required><label class="main__label" for="checkbox-two">У репетитора</label>
+                        <input value="maps.html#index"   class="main__r" type="checkbox" name="field" id="checkbox-two" 
+                        onclick="foo(this)"><label class="main__label" for="checkbox-two">У репетитора</label>
                       </div>
                       
                  
@@ -139,9 +145,7 @@
                        <span class="main__text-right">
                           Выберите наиболее подходящее для Вас место проведения занятий. Если Вы еще не определились, выберите оба варианта ответа.
                        </span>
-                       <a class="main__button" href="maps.html">
-                          Продолжить
-                        </a>
+                      <input class="main__button"  type="button" value="Продолжить" onClick="window.location.href = document.querySelectorAll('[name=field]:checked')[0].value"/>
                     </div>
                   </form>
                   
@@ -175,7 +179,8 @@
                 <li><a class="footer-nav__item" href="../../courses.html">Онлайн-курсы</a></li>
               </ul>
               <ul class="footer-nav footer-persone-nav">
-                <li><a class="footer-nav__item" href="">Вход для преподавателей</a></li>
+               <li><a class="footer-nav__item" href="../../student-account/password.html">Вход для учеников</a></li>
+                <li><a class="footer-nav__item" href="../../teacher-account/password.html">Вход для преподавателей</a></li>
                 <li><a class="footer-nav__item" href="../../vacancy.html">Вакансии</a></li>
                 <li><a class="footer-nav__item" href="../../siteRules.html">Правила сайта</a></li>
                 <li><a class="footer-nav__item" href="">Карта сайта</a></li>
@@ -196,6 +201,26 @@
             </div>
           </div>
         </footer>
+         <script>
+            $('.main__button').on('click', function(){
+              if(($('#checkbox').is(':not(:checked)'))&($('#checkbox-two').is(':not(:checked)'))) {
+                $('.main__label').addClass('not-checked');
+              };
+             $('#checkbox').on('click', function(){
+              if ($('#checkbox').is(':checked')) {
+                $('.main__label').removeClass('not-checked');
+                
+                
+              };
+             });
+              $('#checkbox-two').on('click', function(){
+              if ($('#checkbox-two').is(':checked')) {
+                $('.main__label').removeClass('not-checked');
+              
+              };
+             });
+            });
+          </script>
         <script>
             function getRandomInRange(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;

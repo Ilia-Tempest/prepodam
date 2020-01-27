@@ -6291,6 +6291,7 @@ table {
 button,
 input,
 select {
+  outline:none;
   margin: 0;
 }
 
@@ -6950,7 +6951,11 @@ footer .footer_wrapper .footer-information .footer-information_text {
   color: #c5c5c5;
   font-size: 16px;
   opacity: .8;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+}
+footer .footer_wrapper .footer-information .footer-information_text:nth-child(4n)
+{
+ margin-bottom: 0px;
 }
 .sideBar-mobile {
   display: none;
@@ -7613,7 +7618,7 @@ h6 {
 }
 
 .section-conteiner .information-block .successes-wrapper .successes-teachers {
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 
 .section-conteiner .information-block .reviews-conteiner {
@@ -7939,7 +7944,7 @@ h6 {
 }
 
 .articles .articles_wrapper .articles-navigation .articles-list .articles__nav {
-  width: 15%;
+  width: 16%;
   min-width: 200px;
   margin-bottom: 40px;
   margin-right: 3px;
@@ -8636,7 +8641,7 @@ h6 {
     flex-wrap: wrap;
 }
   .wrapper {
-    padding: 0 20px;
+    padding: 0 50px;
   }
   .slider-section_wrapper .slider-list .slider-item {
     -ms-flex-direction: column-reverse;
@@ -9136,4 +9141,3 @@ footer .footer_wrapper .footer-navigation .footer-site-nav {
 
 /*Стили для блока index.html*/
 /*# sourceMappingURL=style.css.map */
-

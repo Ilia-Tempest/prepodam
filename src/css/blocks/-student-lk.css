@@ -1,0 +1,14 @@
+.header-lk {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+}
+
+.header-lk__img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-left: 10px;
+}

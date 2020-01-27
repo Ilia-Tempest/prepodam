@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru" prefix="og: http://ogp.me/ns#">
+  <head>
+    <title>Регистрация преподавателей - образование</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Page description">
+    <meta name="keywords" content="page, keywords">
+    <meta name="theme-color" content="#000000">
+    <meta name="copyright" content="Author">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+    <meta name="apple-mobile-web-app-title" content="Application Name">
+    <meta name="msapplication-TileImage" content="img/favicons/144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="format-detection" content="telephone=no">
+        <meta property="og:title" content="">
+        <meta property="og:url" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="">
+        <meta property="og:description" content="">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+   
+  </head>
+  <body>
+    <div class="school__container">
+        <header>
+            <div class="header_wrapper"><a class="header-logo_conteiner" href="/"><img class="logo" src="../img/icons/logo.svg"></a>
+              <div class="navigation_conteiner">
+                <div class="contacts">
+                  <ul class="contact-city__list">
+                    <li class="contact-city__item">
+                      <button class="contact-city_Btn">Москва<span class="contact__icon arrow_down"></span></button>
+                    </li>
+                  </ul><a class="header-contact_tel" href="tel:+7809562345"> <span class="contact__icon tel-icon"></span>+7809562345</a>
+                </div>
+                <nav class="main-nav"> 
+                  <ul class="nav-list">
+                    <li><a class="nav-list__item activePage" href="../aboutUs.html">Об Академии</a></li>
+                    <li><a class="nav-list__item" href="../courses.html">Онлайн-курсы</a></li>
+                    <li><a class="nav-list__item" href="../articles.html">Статьи</a></li>
+                  </ul>
+                </nav>
+                <div class="header-button">
+                  <button class="allBtn teachersBtn">Преподавателям
+                    <div class="headerBtn-content_wrapper">
+                      <ul class="students-conteiner">
+                        <li><a class="students-item log" href="../teacher-account/password.html">Вход</a></li>
+                        <li> <a class="students-item reg" href="../registr-teacher/page-start.html">Регистрация</a></li>
+                      </ul>
+                      <div class="icon-arrow-top"><span class="icon"></span></div>
+                    </div>
+                  </button>
+                  <button class="allBtn studentsBtn">Обучающимся
+                    <div class="headerBtn-content_wrapper">
+                      <ul class="students-conteiner">
+                        <li><a class="students-item log" href="../student-account/password.html">Вход</a></li>
+                        <li> <a class="students-item reg" href="../registr-student/student-registr.html">Регистрация</a></li>
+                      </ul>
+                      <div class="icon-arrow-top"><span class="icon"></span></div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="header-burgger" id="burgger"><span class="burgger__line"></span><span class="burgger__line"></span><span class="burgger__line"></span></div>
+            </div>
+        </header>
+     </div>
+             <main>
+              <section class="main wrapper registr">
+              	
+                  <form action="services.html" class="registr-form">
+                  	<div class="registr-form__item registr-form__item_left">
+                  		<div class="registr-form__image">
+                  			<img src="../img/registration/load-photo.svg" alt="Загрузить фото">
+                  		</div>
+                      <input type="file" id="file"  placeholder="Загрузить фотографию"> 
+                      <label for="file" class="allBtn info__link_btn registr-form__button">Загрузить фотографию</label>
+                  		
+                    	<div class="registr-form__text">
+                        <ul class="registr-form__list">
+                          <li>Лицо на фотографии:</li>
+                          <br>
+                          <li>1. Должно быть отчетливо видно</li>
+                          <li>2. Должно занимать не менее 20% пространства.</li>
+                          <li>3. Должно быть без очков и других аксессуаров, мешающих распознаванию лица</li>
+                        </ul> 
+                      </div>
+                      <div class="registr-form__sidebar registr-sidebar">
+                        <div class="registr-sidebar__block">
+                              <div class="registr-sidebar__item registr-sidebar__item_m">
+                                <img src="../img/registration/info1.svg" alt="" class="registr-sidebar__image">
+                                <span class="registr-sidebar__text registr-sidebar__text_b">преподавателей <br> работают в академии</span>
+                              </div>
+                              <div class="registr-sidebar__item registr-sidebar__item_m">
+                                <img src="../img/registration/info2.svg" alt="" class="registr-sidebar__image">
+                                <span class="registr-sidebar__text registr-sidebar__text_b">заказов размещено <br> на нашем сайте</span>
+                              </div>
+                        </div>
+                
+                          <div class="registr-sidebar__block">
+                            <div class="registr-sidebar__item">
+                              <div class="registr-sidebar__image">
+                                <img src="../img/registration/1.svg" alt="">
+                              </div>
+                              <div class="registr-sidebar__text">Доступ ко всем инструментам <br> для проведения занятий</div>
+                            </div>
+                             <div class="registr-sidebar__item">
+                              <div class="registr-sidebar__image">
+                                <img src="../img/registration/2.svg" alt="">
+                              </div>
+                              <div class="registr-sidebar__text">Большой выбор заказов <br> по различным дициплинам</div>
+                            </div>
+                             <div class="registr-sidebar__item">
+                              <div class="registr-sidebar__image">
+                                <img src="../img/registration/3.svg" alt="">
+                              </div>
+                              <div class="registr-sidebar__text">Безопасное проведение <br> сделки по договору</div>
+                            </div>
+                          </div>
+                        
+                        
+                      </div>
+                    </div>
+                    <div class="registr-form__item registr-form__item_right">
+                      <div class="registr-form__content registr-form__content_left">
+                        <div class="registr-form__title">Образование и опыт работы</div>
+                        <div class="educate-block">
+                          <input class="registr-form__input" type="text" required placeholder="Учебное заведение">
+                          <input class="registr-form__input" type="text"  required placeholder="Специальность/направление">
+                          <input class="registr-form__input registr-form__input_datepicker datepicker" type="text" id="data1"  required placeholder="Год выпуска">
+                          <div class="registr-form__select-wrap">
+                            <select name="" id="" class="registr-form__select">
+                              <option class="registr-form__option" disabled selected>Квалификация</option>
+                              <option class="registr-form__option">бакалавр</option>
+                              <option class="registr-form__option">специалист</option>
+                              <option class="registr-form__option">магистр</option>
+                               <option class="registr-form__option">аспирант</option>
+                                <option class="registr-form__option">доцент</option>
+                                 <option class="registr-form__option">кандидат наук</option>
+                                  <option class="registr-form__option">доктор наук</option>
+                                   <option class="registr-form__option">профессор</option>
+                            </select>
+                          </div>
+                        </div>
+                        <button type="button" class="allBtn info__link_btn registr-form__button" id="add-educate">Добавить образование</button>
+                        <input type="file" id="doc">
+                        <label for="doc" class="load-doc registr-form__load-doc">⦁  Загрузить копии документов <br>об образовании</label>
+                        <div class="registr-form__title">Опыт работы</div>
+                        <div class="experience-block">
+                          <input class="registr-form__input" type="text" required placeholder="Место работы">
+                          <input class="registr-form__input" type="text" required placeholder="Должность">
+                          <input class="registr-form__input registr-form__input_datepicker datepicker" type="text" id="data2"  required placeholder="с 1 июля 2018 года">
+                          <input class="registr-form__input registr-form__input_datepicker datepicker" type="text" id="data3"  required placeholder="по 1 июля 2019 года">
+                          <textarea name="" id="" class="registr-form__textarea registr-form__textarea_experience" placeholder="Обязанности"></textarea>
+                        </div>
+                        <button type="button" class="allBtn info__link_btn registr-form__button" id="add-experience">Добавить место работы</button>
+                       
+                        <input type="submit" class="main__button main__button_left" value="Продолжить">
+                      </div>
+                  	</div>
+                  </form>
+                
+              	<div class="registr-sidebar registr__sidebar">
+                  <div class="registr-sidebar__block">
+                      <div class="registr-sidebar__item registr-sidebar__item_m">
+                        <img src="../img/registration/info1.svg" alt="" class="registr-sidebar__image">
+                        <span class="registr-sidebar__text registr-sidebar__text_b">преподавателей <br> работают в академии</span>
+                      </div>
+                      <div class="registr-sidebar__item registr-sidebar__item_m">
+                        <img src="../img/registration/info2.svg" alt="" class="registr-sidebar__image">
+                        <span class="registr-sidebar__text registr-sidebar__text_b">заказов размещено <br> на нашем сайте</span>
+                      </div>
+                    </div>
+                
+                  <div class="registr-sidebar__block">
+                    <div class="registr-sidebar__item">
+                      <div class="registr-sidebar__image">
+                        <img src="../img/registration/1.svg" alt="">
+                      </div>
+                      <div class="registr-sidebar__text">Доступ ко всем инструментам <br> для проведения занятий</div>
+                    </div>
+                     <div class="registr-sidebar__item">
+                      <div class="registr-sidebar__image">
+                        <img src="../img/registration/2.svg" alt="">
+                      </div>
+                      <div class="registr-sidebar__text">Большой выбор заказов <br> по различным дициплинам</div>
+                    </div>
+                     <div class="registr-sidebar__item">
+                      <div class="registr-sidebar__image">
+                        <img src="../img/registration/3.svg" alt="">
+                      </div>
+                      <div class="registr-sidebar__text">Безопасное проведение <br> сделки по договору</div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+               <!-- /.main -->
+            </main>
+            
+   
+        <footer>
+          <div class="footer_wrapper">
+            <div class="footer-soc"><a class="footer-logo_container" href="../index.html"><img src="../img/icons/logo.svg" alt="alt"></a>
+              <ul class="footer-cos__list">
+                <li><a class="footer-soc__link" href="https://vk.com/prep0dam"><i class="fab fa-vk"></i></a></li>
+                <li><a class="footer-soc__link" href="https://www.instagram.com/prep0dam/"><i class="fab fa-instagram"></i></a></li>
+                <li><a class="footer-soc__link" href="https://www.facebook.com/prep0dam/"><i class="fab fa-facebook-f"></i></a></li>
+              </ul>
+            </div>
+            <nav class="footer-navigation">
+              <ul class="footer-nav footer-site-nav">
+                <li><a class="footer-nav__item footer-nav__item_title" href="aboutUs.html">Об Академии</a></li>
+                <li><a class="footer-nav__item" href="../questionsAndAnswers.html">Вопрос-Ответ</a></li>
+                <li><a class="footer-nav__item" href="../variate.html">Cоздать заказ</a></li>
+                <li><a class="footer-nav__item" href="../articles.html">Статьи</a></li>
+                <li><a class="footer-nav__item" href="../courses.html">Онлайн-курсы</a></li>
+              </ul>
+              <ul class="footer-nav footer-persone-nav">
+                <li><a class="footer-nav__item" href="../student-account/password.html">Вход для учеников</a></li>
+                <li><a class="footer-nav__item" href="../teacher-account/password.html">Вход для преподавателей</a></li>
+                <li><a class="footer-nav__item" href="../vacancy.html">Вакансии</a></li>
+                <li><a class="footer-nav__item" href="../siteRules.html">Правила сайта</a></li>
+                <li><a class="footer-nav__item" href="">Карта сайта</a></li>
+              </ul>
+            </nav>
+            <div class="footer-information">
+              <p class="footer-information_text">Поддержка 8-800-00-00</p>
+              <p class="footer-information_text">Будние дни с 8:00 до 22:00</p>
+              <p class="footer-information_text">Выходные с 10:00 до 22:00</p>
+              <p class="footer-information_text">По вопросам сотрудничества</p>
+              <p class="footer-information_text">пишите на почту: prepod@gmail.com</p>
+            </div>
+          </div>
+          <div class="copyright">
+            <div class="wrapper copyright_wrapper">
+              <p class="copyright_text">2019 все права защищены  </p>
+              <div class="footer_sub-logo"><img src="../img/icons/footer_logo.svg" alt="Telwas"></div>
+            </div>
+          </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script defer src="../js/common.min.js"></script>
+        <script defer src="../js/libs.min.js"></script>
+         <script src="../js/work.js"></script>
+         <script src="../js/date.js"></script>
+         <script src="../js/scripts.js"></script>
+       
+  </body>
+</html>

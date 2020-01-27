@@ -52,8 +52,8 @@
                   <button class="allBtn teachersBtn">Преподавателям
                     <div class="headerBtn-content_wrapper">
                       <ul class="students-conteiner">
-                        <li><a class="students-item log" href="">Вход</a></li>
-                        <li> <a class="students-item reg" href="">Регистрация</a></li>
+                        <li><a class="students-item log" href="teacher-account/password.html">Вход</a></li>
+                        <li> <a class="students-item reg" href="registr-teacher/page-start.html">Регистрация</a></li>
                       </ul>
                       <div class="icon-arrow-top"><span class="icon"></span></div>
                     </div>
@@ -61,8 +61,8 @@
                   <button class="allBtn studentsBtn">Обучающимся
                     <div class="headerBtn-content_wrapper">
                       <ul class="students-conteiner">
-                        <li><a class="students-item log" href="">Вход</a></li>
-                        <li> <a class="students-item reg" href="">Регистрация</a></li>
+                        <li><a class="students-item log" href="student-account/password.html">Вход</a></li>
+                        <li> <a class="students-item reg" href="registr-student/student-registr.html">Регистрация</a></li>
                       </ul>
                       <div class="icon-arrow-top"><span class="icon"></span></div>
                     </div>
@@ -87,8 +87,8 @@
                   <div class="main__block">
                     <div class="main__item main__item-left">
                       <h1 class="main__title">
-                          Преподаватели(автоподсчёт)
-                      </h1>
+                          Преподаватели:
+                      </h1> <span class="main__text-top main__text-number">199</span>
                       <!-- /.main__title -->
                       <span class="main__subtitle">
                           Пожалуйста, ответьте на все вопросы, чтобы сформировать заказ и получить предложения от преподавателей
@@ -96,15 +96,22 @@
                       <div class="main-auto">
                           <div class="main-auto__image">
                            
-                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="gits">
+                            <div class="container-1">
+                              <svg height="200" width="200" viewBox="0 0 200 200">
+                                <defs>
+                                  <mask id="msk1" >
+                                  <rect fill="white" width="100%" height="100%" />	   
+                                   <rect fill="red" x="0" y="0" width="200" height="200" >
+                                     <animate attributeName="y" dur="4s" begin="0s" values="0; 0" fill="freeze" />
+                                  </rect>	
+                                 </mask> 
+                                </defs>
+                                <circle id="crc1"  cx="100" cy="100" r="90" />
+                                <text class="counter text-school" x="90" y="100">0</text>><text class="text-school" x="120" y="100">%</text>
+                                
+                              </svg>
                               
-                              <circle cx="50" cy="50" r="34">
-                                <animateTransform attributeName="transform"
-                                  attributeType="XML" type="rotate" from="0 50 50"
-                                      to="80 50 50" dur="7s" repeatCount="indefinite" />
-                              </circle>
-                              <text x="49" y="54">0</text>><text x="60" y="54">%</text>
-                            </svg>
+                              </div>
                             
                           </div>
                           
@@ -141,12 +148,7 @@
                         type="radio" id="checkbox-three" name="field" required onclick="foo(this)"><label class="main__label" for="checkbox-three">Дополнительное образование</label>
                       </div>
                  
-                       <h3 class="main__title">Подсказка:</h3>
-                       <span class="main__text-right">
-                         
-                          Научный руководитель - это  уникального торгового предложения или же описание названия того или иного продукта, который в первом экране.Описание уникального торгового предложения ил и же описание названия того 
-                           
-                       </span>
+                      
                        <input class="main__button"  type="button" value="Продолжить" onClick="window.location.href = document.querySelectorAll('[name=field]:checked')[0].value"/>
                     </div>
                   </form>
@@ -181,6 +183,7 @@
                 <li><a class="footer-nav__item" href="courses.html">Онлайн-курсы</a></li>
               </ul>
               <ul class="footer-nav footer-persone-nav">
+                <li><a class="footer-nav__item" href="student-account/password.html">Вход для учеников</a></li>
                 <li><a class="footer-nav__item" href="">Вход для преподавателей</a></li>
                 <li><a class="footer-nav__item" href="vacancy.html">Вакансии</a></li>
                 <li><a class="footer-nav__item" href="siteRules.html">Правила сайта</a></li>
@@ -202,7 +205,28 @@
             </div>
           </div>
         </footer>
-      
+       <script>
+            $('.main__button').on('click', function(){
+              if(($('#checkbox').is(':not(:checked)'))&($('#checkbox-two').is(':not(:checked)'))&($('#checkbox-three').is(':not(:checked)'))) {
+                $('.main__label').addClass('not-checked');
+              };
+             $('#checkbox').on('click', function(){
+              if ($('#checkbox').is(':checked')) {
+                $('.main__label').removeClass('not-checked');
+              };
+             });
+              $('#checkbox-two').on('click', function(){
+              if ($('#checkbox-two').is(':checked')) {
+                $('.main__label').removeClass('not-checked');
+              };
+             });
+              $('#checkbox-three').on('click', function(){
+              if ($('#checkbox-three').is(':checked')) {
+                $('.main__label').removeClass('not-checked');
+              };
+             });
+            });
+          </script>
        
         
         <script>

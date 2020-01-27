@@ -1,0 +1,404 @@
+
+input[type='image']
+	opacity: 0
+	position: absolute
+input[type='radio'] + label.registr-form__mainlabel
+		overflow: visible
+input[type='radio'] + label.registr-form__mainlabel::before
+		content: ''
+		width: 26px
+		height: 26px
+		border: 1px solid #000
+		border-radius: 5px
+		display: inline-block
+		vertical-align: middle
+		margin-right: 20px
+		box-shadow: none
+		position: absolute
+		left: 0
+input[type='radio']:checked + label.registr-form__mainlabel::after
+	content: ''
+	width: 25px
+	height: 15px
+	border: 5px solid #ff4200
+	border-top: none
+	border-right: none
+	top: -3px
+	left: 4px
+.registr-form 
+	display: flex
+	#street 
+		width: 100% 	
+		margin-top: 0
+	#city 
+		width: 100%
+	&__sciences
+		height: 400px
+		overflow: auto
+		margin-bottom: 35px
+		padding-top: 10px
+		position: relative
+		&-wrap 
+			position: absolute
+	&__science 
+		display: flex
+		flex-direction: column
+
+	&__item 
+		flex-basis: 50%
+		&_left
+			padding-right: 100px
+			position: relative
+			&::before	 
+				content: ''
+				position: absolute
+				height: 100%
+				width: 1px 
+				background-color: #41F7FC
+				right: 0
+				top: 30px
+		&_right
+			padding-left: 100px
+	&__bigtitle 
+		font-size: 25px
+		font-weight: 600
+		margin-bottom: 35px
+	&__bigsubtitle
+		font-size: 20px
+		font-weight: 600
+		margin-bottom: 35px
+	&__mainlabel
+		display: block
+		margin-bottom: 30px
+		overflow: visible
+		padding-left: 46px
+		position: relative
+		&_child 
+			margin-left: 45px
+			display: none
+
+
+	&__image 
+		background-color: #E7E7E7
+		text-align: center
+		padding-top: 54px
+	&__text
+		margin-top: 50px
+		font-weight: 300
+		margin-bottom: 20px
+	&__title
+		font-weight: 600
+		margin-bottom: 30px
+	&__social-btn
+		display: flex
+		justify-content: space-between
+		margin-bottom: 35px
+	&__input,
+	&__select
+		border-radius: 10px 
+		border: 1px solid #dbdbdb
+		width: 100%
+		text-align: left
+		height: 40px
+		padding-left: 15px
+		background: url(../img/registration/rectangle.png) no-repeat top 5px right 10px
+	&__input
+		margin-bottom: 20px
+		background: url(../img/registration/star.png) no-repeat right 10px top 8px
+
+		&_datepicker
+			width: 84%
+			float: left
+		&_long 
+			background: none
+			margin-bottom: 0
+			margin-top: 30px
+		&_shirt 
+			width: 70%
+			display: block
+			margin-bottom: 30px
+			margin-left: 45px
+			background: none
+	&__select-wrap
+		position: relative
+		font-weight: 300
+		clear: both
+		
+	&__option 
+		font-weight: 300
+		font-size: 18px
+	&__label
+		display: block
+		text-align: left
+		padding-left: 46px
+		font-weight: 500
+	input[type="radio"] + label.registr-form__label::before
+		content: ''
+		width: 26px
+		height: 26px
+		position: absolute
+		left: 0
+		margin: 0
+		box-shadow: none
+		top: 10%
+		border: 1px solid #000
+	input[type="radio"]:checked + label.registr-form__label::after
+		content: ''
+		width: 30px
+		height: 15px
+	&__label-span
+		background: linear-gradient(#41F1FC, #0F86F3)
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+		color: #0F86F3
+	&__label_span
+		background: linear-gradient(#41F1FC, #0F86F3)
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+		color: #0F86F3
+		font-size: 16px
+		margin-bottom: 30px
+		display: block
+		margin-left: 50px
+		margin-top: -30px
+	&__colortext
+		background: linear-gradient(#41F1FC, #0F86F3)
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+		color: #0F86F3
+
+	&__button
+		width: 100%
+		margin-top: 30px
+		margin-left: 0
+		border: none
+		&_mb 
+			margin-bottom: 30px
+	&__link 
+		display: inline-block
+		color: #000
+		margin-top: 20px
+		font-weight: 500
+	&__content
+		padding: 0 60px 60px 60px
+		border-radius: 10px
+		text-align: center
+		&_shadow 
+			box-shadow: 0 0 30px rgba(0,0,0,.1)
+			padding: 60px
+		&_left
+			text-align: left
+		
+	input[type="file"]
+		display: none
+	&__load-doc
+		margin-top: 36px
+		margin-bottom: 36px
+	&__dop-info
+		font-weight: 600
+		font-size: 20px
+		margin-bottom: 10px
+	&__textarea
+		width: 100%
+		height: 157px
+		margin-top: 20px
+		border-radius: 10px
+		padding-top: 12px
+		padding-left: 14px
+		&_experience
+			margin: 0
+			height: 149px
+	&__paysblock
+		display: flex
+		flex-wrap: wrap 
+		justify-content: space-between
+		margin-bottom: 16px
+input[type="checkbox"] + label.registr-form__checkbox
+	width: 188px
+	height: 40px
+	background-color: #f2f2f2
+	border-radius: 10px
+	display: inline-block
+	display: flex
+	align-item: center
+	justify-content: center
+	margin-bottom: 20px
+	&::before
+		display: none
+		
+input[type="checkbox"]:checked + label.registr-form__checkbox
+	background-color: #c5c5c5
+	&::before
+		display: none
+	&::after
+		display: none	
+.main__button
+	border: none
+.main__button_left
+	margin-left: 0	
+	border: none		
+			
+.load-doc		
+	font-size: 16px
+	font-weight: 400
+	background: linear-gradient(to bottom, #41F1FC, #0F86F3)
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
+	color: #0F86F3
+	display: block
+	text-align: left
+.add-btn
+	cursor: pointer
+.educate-block
+	&__clone
+		margin-top: 50px
+.experience-block
+	&__clone
+		margin-top: 50px
+
+.social-btn
+	width: 200px
+	height: 40px
+	color: #fff
+	text-align: center
+	border-radius: 10px
+	font-size: 20px
+	&_vk 
+		background-color: #5080B8
+		margin-right: 24px
+	&_fb 
+		background-color: #4267B2
+.registr
+	&-sidebar
+		&__block
+			margin-top: 15px
+			display: inline-block
+		&__item 
+			display: flex
+			margin-top: 30px
+			&_m 
+				margin-top: 30px
+		&__image 
+			margin-right: 26px
+		&__text
+			font-weight: 400
+			&_b 
+				font-weight: 500
+	&__sidebar
+		display: none
+.ui-datepicker-trigger 
+	float: right
+	position: relative
+	top: -3px
+	cursor: pointer
+@media (max-width: 1199px)
+	.registr-form
+		&__item
+			&_left 
+				padding-right: 20px
+				&::before	
+					opacity: 0
+			&_right
+				padding-left: 20px
+		&__bigtitle
+			font-size: 20px
+			
+		&__bigsubtitle
+			font-size: 18px
+			
+		&__content
+			padding: 0 40px 60px 40px
+			&_shadow
+				padding: 60px 40px
+		&__label_span
+			font-size: 14px
+			line-height: 1
+			
+		
+@media (max-width: 970px)
+	.registr-block
+		padding-top: 0
+	.registr-form
+		flex-direction: column
+		text-align: center
+		&__item
+			width: 50%
+			margin: auto
+			&_left 
+				padding-right: 0
+			&_right
+				padding-left: 0
+		&__bigtitle
+			text-align: center
+		&__bigsubtitle
+			text-align: center
+		&__content
+			
+			margin-bottom: 20px
+			padding: 40px 40px
+		&__sidebar
+			display: none
+		&__button
+			font-size: 16px
+		&__paysblock
+			flex-direction: column
+			align-items: center
+	.main__button 
+		width: 100%
+		margin-top: 50px
+		font-size: 16px	
+	.registr
+		&-sidebar
+			margin: auto
+			&__block
+				padding-right: 0
+				display: inline-block
+				width: 100%
+				&:first-child
+					margin-bottom: 20px
+			&__item
+				flex-direction: column
+				text-align: center
+			&__image
+				margin-right: 0
+				margin-bottom: 20px
+		&__sidebar
+			display: block
+				
+	
+		
+@media (max-width: 650px)
+	.registr-form
+		&__social-btn
+			flex-direction: column
+			text-align: center
+			.social-btn
+				margin: auto
+				&_vk
+					margin-bottom: 24px
+					margin-right: auto
+		
+		&__item
+				width: 80%
+		&__button 
+			line-height: 1
+			padding: 10px 35px
+		&__label
+			padding-top: 5px
+			padding-bottom: 5px
+
+					
+					
+@media (max-width: 480px)
+	.registr-form
+		&__item
+			width: 90%
+		&__content
+			padding: 40px 0
+			box-shadow: none
+		&__input
+			&_datepicker
+				width: 80%
+
+
+		

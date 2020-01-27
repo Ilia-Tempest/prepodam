@@ -1,0 +1,112 @@
+input[type='number']
+	-moz-appearance: textfield
+	appearance: textfield
+	-webkit-appearance: textfield
+.account
+	display: flex
+	padding-bottom: 0
+	&-block
+		flex: 1
+		&__video
+			border-radius: 10px
+			box-shadow: 0 0 30px rgba(0,0,0,.2)
+		.city-selection
+			width: 100%
+			display: flex
+			justify-content: space-between
+			align-items: baseline
+			&__link 
+				font-size: 20px
+				background: linear-gradient(#41F1FC, #0F86F3)
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
+				color: #0F86F3
+				font-weight: 600
+				&_dec 
+					text-decoration: underline
+	&-form
+		&__city-selection
+			margin-bottom: 80px
+		&__text
+			margin-bottom: 30px
+			&_short 
+				max-width: 365px
+		&__input
+			border-radius: 10px 
+			border: 1px solid #dbdbdb
+			width: 424px
+			text-align: left
+			height: 40px
+			padding-left: 15px
+			margin-bottom: 20px
+			&_short 
+				width: 220px
+		&__button 
+			border: none
+			width: 424px
+			margin-left: 0
+			margin-top: 10px
+			margin-bottom: 20px
+			&_short
+				width: 277px
+				margin-bottom: 35px
+		&__link
+			width: 424px
+			text-align: center
+			display: block
+			color: #333
+
+.select-city
+	width: 548px
+	height: 468px
+	margin: auto
+	background: #fff
+	box-shadow: 0 0 30px rgba(0,0,0,.1)
+	padding: 60px
+	border-radius: 10px
+	&__input
+		width: 100%
+		border-radius: 10px 
+		border: 1px solid #dbdbdb
+		height: 40px
+		padding-left: 15px
+.sidebar-info
+	margin-bottom: 100px
+
+@media (max-width: 1200px)
+	.account-block
+		.city-selection__link
+			font-size: 18px
+	.select-city
+		width: 420px
+		height: 300px
+		padding: 30px
+@media (max-width: 970px)
+	.account 
+		flex-direction: column-reverse
+		align-items: center
+		&-block 
+			width: 460px
+			&:first-child 
+				margin-top: 50px
+		&-form__city-selection
+			margin-bottom: 30px
+@media (max-width: 767px)
+	.account-block
+		.city-selection__link
+			font-size: 14px
+@media (max-width: 500px)
+	.account
+		&-block
+			width: 80%
+			.city-selection
+				flex-wrap: wrap 
+			&__video
+				width: 100%
+		&-form 
+			&__input
+				width: 100%
+			&__button
+				width: 100%
+		
+

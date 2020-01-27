@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru" prefix="og: http://ogp.me/ns#">
+  <head>
+    <title>Регистрация учеников</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Page description">
+    <meta name="keywords" content="page, keywords">
+    <meta name="theme-color" content="#000000">
+    <meta name="copyright" content="Author">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+    <meta name="apple-mobile-web-app-title" content="Application Name">
+    <meta name="msapplication-TileImage" content="img/favicons/144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="format-detection" content="telephone=no">
+        <meta property="og:title" content="">
+        <meta property="og:url" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="">
+        <meta property="og:description" content="">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="manifest" href="../manifest.json">
+   
+    
+  </head>
+  <body>
+    <div class="school__container">
+          <header>
+            <div class="header_wrapper"><a class="header-logo_conteiner" href="/"><img class="logo" src="../img/icons/logo.svg"></a>
+              <div class="navigation_conteiner">
+                <div class="contacts">
+                  <ul class="contact-city__list">
+                    <li class="contact-city__item">
+                      <button class="contact-city_Btn">Москва<span class="contact__icon arrow_down"></span></button>
+                    </li>
+                  </ul><a class="header-contact_tel" href="tel:+7809562345"> <span class="contact__icon tel-icon"></span>+7809562345</a>
+                </div>
+                <nav class="main-nav"> 
+                  <ul class="nav-list">
+                    <li><a class="nav-list__item activePage" href="../aboutUs.html">Об Академии</a></li>
+                    <li><a class="nav-list__item" href="../courses.html">Онлайн-курсы</a></li>
+                    <li><a class="nav-list__item" href="../articles.html">Статьи</a></li>
+                  </ul>
+                </nav>
+                 <div class="header-button">
+                  <button class="allBtn teachersBtn">Преподавателям
+                    <div class="headerBtn-content_wrapper">
+                      <ul class="students-conteiner">
+                        <li><a class="students-item log" href="../teacher-account/password.html">Вход</a></li>
+                        <li> <a class="students-item reg" href="../registr-teacher/page-start.html">Регистрация</a></li>
+                      </ul>
+                      <div class="icon-arrow-top"><span class="icon"></span></div>
+                    </div>
+                  </button>
+                  <button class="allBtn studentsBtn">Обучающимся
+                    <div class="headerBtn-content_wrapper">
+                      <ul class="students-conteiner">
+                        <li><a class="students-item log" href="../student-account/password.html">Вход</a></li>
+                        <li> <a class="students-item reg" href="../registr-student/student-registr.html">Регистрация</a></li>
+                      </ul>
+                      <div class="icon-arrow-top"><span class="icon"></span></div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="header-burgger" id="burgger"><span class="burgger__line"></span><span class="burgger__line"></span><span class="burgger__line"></span></div>
+            </div>
+          </header>
+     </div>
+    <main>
+      <section class="main wrapper registr">
+        <form action="../student-lk/profile.html" class="registr-form">
+          <div class="registr-form__item registr-form__item_left">
+            <div class="registr-form__image">
+              <img src="../img/registration/load-photo.svg" alt="Загрузить фото">
+            </div>
+            <input type="file" id="file"  placeholder="Загрузить фотографию"> 
+            <label for="file" class="allBtn info__link_btn registr-form__button">Загрузить фотографию</label>
+            <div class="registr-form__text">
+              <ul class="registr-form__list">
+                <li>Лицо на фотографии:</li>
+                <br>
+                <li>1. Должно быть отчетливо видно</li>
+                <li>2. Должно занимать не менее 20% пространства.</li>
+                <li>3. Должно быть без очков и других аксессуаров, мешающих распознаванию лица</li>
+              </ul> 
+            </div>
+            <div class="registr-form__sidebar registr-sidebar">
+              <div class="registr-sidebar__block">
+                <div class="registr-sidebar__item registr-sidebar__item_m">
+                  <img src="../img/registration/info1.svg" alt="" class="registr-sidebar__image">
+                  <span class="registr-sidebar__text registr-sidebar__text_b">преподавателей <br> работают в академии</span>
+                </div>
+                <div class="registr-sidebar__item registr-sidebar__item_m">
+                  <img src="../img/registration/info2.svg" alt="" class="registr-sidebar__image">
+                  <span class="registr-sidebar__text registr-sidebar__text_b">заказов размещено <br> на нашем сайте</span>
+                </div>
+              </div>
+             </div>
+          </div>
+          <div class="registr-form__item registr-form__item_right">
+            <div class="registr-form__content registr-form__content_shadow">
+              <div class="registr-form__title">Зарегистрироваться через:</div>
+              <div class="registr-form__social-btn">
+                <a href="#" target="_blank" class="allBtn social-btn social-btn_vk"><i class="fab fa-vk" aria-hidden="true"></i></a>
+                <a href="#" target="_blank" class="allBtn social-btn social-btn_fb"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+              </div>
+              <div class="registr-form__title">Регистрация</div>
+              <input class="registr-form__input" type="text" required="" placeholder="Фамилия">
+              <input class="registr-form__input" type="text" required="" placeholder="Имя">
+              <input class="registr-form__input" type="number" required="" placeholder="Возраст">
+              <input class="registr-form__input" type="email" required="" placeholder="E-mail">
+              <input class="registr-form__input" type="number" required="" placeholder="Номер телефона">
+              <input type="radio" id="check" required="">
+              <label for="check" 
+              class="registr-form__label">Принимаю <span class="registr-form__label-span"> публичную оферту</span>,<span class="registr-form__label-span"> условия использования</span>
+                        </label>
+              <button type="submit"  class="main__button registr-form__button">Зарегистрироваться</button>
+              
+              <a href="student-account/password.html" class="registr-form__link">Уже есть аккаунт?</a>
+            </div>
+          </div>
+        </form>
+      <div class="section-conteiner registr-block">
+        <div class="information-block">
+          <h2 class="section-conteiner__title">Как это работает</h2>
+              <div class="ilustration">
+                <img class="ilustration_img il_bl" src="../img/ilustration/2.1.png" alt="">
+                <img class="ilustration_img il_bc" src="../img/ilustration/1.1.png" alt="">
+                <img class="ilustration_img il_bcl" src="../img/ilustration/3.1.png" alt="">
+                <img id="four-image" class="ilustration_img il_bcc" src="../img/ilustration/4.1.png" alt="">
+                <img class="ilustration_img il_bcr" src="../img/ilustration/5.1.png" alt="">
+                <img class="ilustration_img il_brb" src="../img/ilustration/6.1.png" alt="">
+              </div>
+              <div class="ilustration__mobile">
+                <img class="ilustration_img il_bl" src="../img/ilustration/one.png" alt="">
+                <img class="ilustration_img il_bc" src="../img/ilustration/two.png" alt="">
+                <img class="ilustration_img il_bcl" src="../img/ilustration/three.png" alt="">
+                <img id="four-image" class="ilustration_img il_bcc" src="../img/ilustration/four.png" alt="">
+                <img class="ilustration_img il_bcr" src="../img/ilustration/five.png" alt="">
+                <img class="ilustration_img il_brb" src="../img/ilustration/six.png" alt="">
+              </div>
+              <div class="howItWorks__video">
+                <video class="howItWorks_video" controls="" poster="img/video-poster_01.png">
+                  <source src="video.mp4" type="video/mp4">
+                  <source src="video.webm" type="video/webm">
+                </video>
+              </div>
+          </div>
+        </div>
+    </section>
+     <!-- /.main -->
+    </main>
+        <footer>
+          <div class="footer_wrapper">
+            <div class="footer-soc"><a class="footer-logo_container" href="../index.html"><img src="../img/icons/logo.svg" alt="alt"></a>
+              <ul class="footer-cos__list">
+                <li><a class="footer-soc__link" href="https://vk.com/prep0dam"><i class="fab fa-vk"></i></a></li>
+                <li><a class="footer-soc__link" href="https://www.instagram.com/prep0dam/"><i class="fab fa-instagram"></i></a></li>
+                <li><a class="footer-soc__link" href="https://www.facebook.com/prep0dam/"><i class="fab fa-facebook-f"></i></a></li>
+              </ul>
+            </div>
+            <nav class="footer-navigation">
+              <ul class="footer-nav footer-site-nav">
+                <li><a class="footer-nav__item footer-nav__item_title" href="aboutUs.html">Об Академии</a></li>
+                <li><a class="footer-nav__item" href="../questionsAndAnswers.html">Вопрос-Ответ</a></li>
+                <li><a class="footer-nav__item" href="../variate.html">Cоздать заказ</a></li>
+                <li><a class="footer-nav__item" href="../articles.html">Статьи</a></li>
+                <li><a class="footer-nav__item" href="../courses.html">Онлайн-курсы</a></li>
+              </ul>
+              <ul class="footer-nav footer-persone-nav">
+                <li><a class="footer-nav__item" href="../student-account/password.html">Вход для учеников</a></li>
+                <li><a class="footer-nav__item" href="../teacher-account/password.html">Вход для преподавателей</a></li>
+                <li><a class="footer-nav__item" href="../vacancy.html">Вакансии</a></li>
+                <li><a class="footer-nav__item" href="../siteRules.html">Правила сайта</a></li>
+                <li><a class="footer-nav__item" href="">Карта сайта</a></li>
+              </ul>
+            </nav>
+            <div class="footer-information">
+              <p class="footer-information_text">Поддержка 8-800-00-00</p>
+              <p class="footer-information_text">Будние дни с 8:00 до 22:00</p>
+              <p class="footer-information_text">Выходные с 10:00 до 22:00</p>
+              <p class="footer-information_text">По вопросам сотрудничества</p>
+              <p class="footer-information_text">пишите на почту: prepod@gmail.com</p>
+            </div>
+          </div>
+          <div class="copyright">
+            <div class="wrapper copyright_wrapper">
+              <p class="copyright_text">2019 все права защищены  </p>
+              <div class="footer_sub-logo"><img src="img/icons/footer_logo.svg" alt="Telwas"></div>
+            </div>
+          </div>
+        </footer>
+          <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+          <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+           <script defer src="../js/libs.min.js"></script>
+          <script defer src="../js/common.min.js"></script>
+        <script>
+           $(function() {
+              $('input[type="radio"]').click( function(){
+                 if($(this).attr("checked") == 'checked') {  
+                            $(this).removeAttr('checked');
+                        } else {
+                            $(this).attr('checked', 'checked')
+                        }
+
+                  });
+          });
+        </script>
+  </body>
+</html>
